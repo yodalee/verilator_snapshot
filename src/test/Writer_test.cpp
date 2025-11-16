@@ -7,36 +7,33 @@ namespace fst {
 
 class WriterTest : public ::testing::Test {
 protected:
-    void SetUp() override {
-        // Setup Writer instance
-        writer = unique_ptr<fst::Writer>(new fst::Writer(ss));
-    }
+    void SetUp() override {}
 
     const string get_hierarchy_buffer() {
-        return writer->hierarchy_buffer_.str();
+        return writer.hierarchy_buffer_.str();
     }
     const string get_geometry_buffer() {
-        return writer->geometry_buffer_.str();
+        return writer.geometry_buffer_.str();
     }
 
-    unique_ptr<fst::Writer> writer;
+    Writer writer;
     ostringstream ss;
 };
 
 TEST_F(WriterTest, CreateVar) {
     // Call CreateVar
-    EXPECT_EQ(writer->CreateVar(
+    EXPECT_EQ(writer.CreateVar(
         fst::Hierarchy::VarType::eVcdWire,
-        fst::Hierarchy::VarDirection::eFstInput,
+        fst::Hierarchy::VarDirection::eInput,
         /*length =*/8,
         "valid",
         /*alias handle =*/0
     ), 1u);
 
     // Second Call CreateVar
-    EXPECT_EQ(writer->CreateVar(
+    EXPECT_EQ(writer.CreateVar(
         fst::Hierarchy::VarType::eVcdPort,
-        fst::Hierarchy::VarDirection::eFstOutput,
+        fst::Hierarchy::VarDirection::eOutput,
         /*length =*/5566,
         "ready",
         /*alias handle =*/0
@@ -53,18 +50,18 @@ TEST_F(WriterTest, CreateVar) {
 
 TEST_F(WriterTest, CreateVarAlias) {
     // Call CreateVar
-    EXPECT_EQ(writer->CreateVar(
+    EXPECT_EQ(writer.CreateVar(
         fst::Hierarchy::VarType::eVcdWire,
-        fst::Hierarchy::VarDirection::eFstInput,
+        fst::Hierarchy::VarDirection::eInput,
         /*length =*/1,
         "clk",
         /*alias handle =*/0
     ), 1u);
 
     // Second Call CreateVar
-    EXPECT_EQ(writer->CreateVar(
+    EXPECT_EQ(writer.CreateVar(
         fst::Hierarchy::VarType::eVcdPort,
-        fst::Hierarchy::VarDirection::eFstOutput,
+        fst::Hierarchy::VarDirection::eOutput,
         /*length =*/0xd, // don't care
         "aliasclk",
         /*alias handle =*/1
@@ -81,9 +78,9 @@ TEST_F(WriterTest, CreateVarAlias) {
 
 TEST_F(WriterTest, CreateAliasOutOfRange) {
     // Call CreateVar
-    EXPECT_EQ(writer->CreateVar(
+    EXPECT_EQ(writer.CreateVar(
         fst::Hierarchy::VarType::eVcdWire,
-        fst::Hierarchy::VarDirection::eFstInput,
+        fst::Hierarchy::VarDirection::eInput,
         /*length =*/16,
         "mode",
         /*alias handle =*/0
@@ -99,11 +96,11 @@ TEST_F(WriterTest, CreateAliasOutOfRange) {
 
 TEST_F(WriterTest, Scope) {
     // Set Scope
-    writer->SetScope(
+    writer.SetScope(
         fst::Hierarchy::ScopeType::eVcdModule,
         "top",
         "component"); // TODO: what is this?
-    writer->Upscope();
+    writer.Upscope();
 
     // Get the hierarchy buffer content
     string buf = get_hierarchy_buffer();
@@ -115,9 +112,9 @@ TEST_F(WriterTest, Scope) {
 
 TEST_F(WriterTest, CreateVarVcdReal) {
     // Call CreateVar with eVcdReal
-    EXPECT_EQ(writer->CreateVar(
+    EXPECT_EQ(writer.CreateVar(
         fst::Hierarchy::VarType::eVcdReal,
-        fst::Hierarchy::VarDirection::eFstInput,
+        fst::Hierarchy::VarDirection::eInput,
         /*length =*/0, // length is ignored for real
         "real_val",
         /*alias handle =*/0
@@ -132,9 +129,9 @@ TEST_F(WriterTest, CreateVarVcdReal) {
 }
 
 TEST_F(WriterTest, GeometryBufferNormalVar) {
-    EXPECT_EQ(writer->CreateVar(
+    EXPECT_EQ(writer.CreateVar(
         fst::Hierarchy::VarType::eVcdWire,
-        fst::Hierarchy::VarDirection::eFstInput,
+        fst::Hierarchy::VarDirection::eInput,
         /*length =*/15,
         "data",
         /*alias handle =*/0
@@ -145,9 +142,9 @@ TEST_F(WriterTest, GeometryBufferNormalVar) {
 }
 
 TEST_F(WriterTest, GeometryBufferRealVar) {
-    EXPECT_EQ(writer->CreateVar(
+    EXPECT_EQ(writer.CreateVar(
         fst::Hierarchy::VarType::eVcdReal,
-        fst::Hierarchy::VarDirection::eFstInput,
+        fst::Hierarchy::VarDirection::eInput,
         /*length =*/0,
         "real_data",
         /*alias handle =*/0
@@ -158,9 +155,9 @@ TEST_F(WriterTest, GeometryBufferRealVar) {
 }
 
 TEST_F(WriterTest, GeometryBufferZeroLengthVar) {
-    EXPECT_EQ(writer->CreateVar(
+    EXPECT_EQ(writer.CreateVar(
         fst::Hierarchy::VarType::eVcdWire,
-        fst::Hierarchy::VarDirection::eFstInput,
+        fst::Hierarchy::VarDirection::eInput,
         /*length =*/0,
         "zero",
         /*alias handle =*/0
