@@ -18,21 +18,12 @@ using namespace std;
 
 namespace fst {
 
+// This test focus on testing the emit functions of writer
+// The name of this test is not unique
+// but it is not a problem since Writer_*.test.cpp are individual
+// binary files
 class WriterTest : public ::testing::Test {
 protected:
-    void SetUp() override {}
-
-    // For testing Set(Up)Scope/CreateVar
-    // We call writer API and get the buffer content
-    // without inspecting the internal state of writer
-    static const string GetHierarchyBuffer(Writer& writer) {
-        return writer.hierarchy_buffer_.str();
-    }
-
-    static const string GetGeometryBuffer(Writer& writer) {
-        return writer.geometry_buffer_.str();
-    }
-
     static void WriteHeader(const Header &h, ostream &os) {
         Writer::WriteHeader_(h, os);
     }
@@ -52,11 +43,11 @@ protected:
         return detail::ValueChangeData::UniquifyWaveData(data);
     }
 
-    static void FlushValueChangeData_ValueChanges_EncodePositionsAndWriteUniqueWaveData(
+    static uint64_t FlushValueChangeData_ValueChanges_EncodePositionsAndWriteUniqueWaveData(
         ostringstream &os, const vector<vector<char>> &data,
         vector<int64_t> &positions
     ) {
-        detail::ValueChangeData::EncodePositionsAndWriteUniqueWaveData(os, data, positions);
+        return detail::ValueChangeData::EncodePositionsAndWriteUniqueWaveData(os, data, positions);
     }
 
     static void FlushValueChangeData_EncodedPositions(
@@ -65,162 +56,6 @@ protected:
         detail::ValueChangeData::WriteEncodedPositions(encoded_positions, os);
     }
 };
-
-TEST_F(WriterTest, CreateVar) {
-    Writer writer;
-    // Call CreateVar
-    EXPECT_EQ(writer.CreateVar(
-        fst::Hierarchy::VarType::eVcdWire,
-        fst::Hierarchy::VarDirection::eInput,
-        /*bitwidth =*/8,
-        "valid",
-        /*alias handle =*/0
-    ), 1u);
-
-    // Second Call CreateVar
-    EXPECT_EQ(writer.CreateVar(
-        fst::Hierarchy::VarType::eVcdPort,
-        fst::Hierarchy::VarDirection::eOutput,
-        /*bitwidth =*/5566,
-        "ready",
-        /*alias handle =*/0
-    ), 2u);
-
-    // Get the hierarchy buffer content
-    string buf = GetHierarchyBuffer(writer);
-    // expected: Type, Direction, Name, bitwidth, Alias Handle
-    // FIXME: in fstapi.c:2598 it writes len, zero, zero for normal variable this may be a bug
-    string expected = "\x10\x01valid\x00\x08\x00"s \
-        "\x12\x02ready\x00\xbe\x2b\x00"s;
-    EXPECT_EQ(buf, expected);
-}
-
-TEST_F(WriterTest, CreateVarAlias) {
-    Writer writer;
-    // Call CreateVar
-    EXPECT_EQ(writer.CreateVar(
-        fst::Hierarchy::VarType::eVcdWire,
-        fst::Hierarchy::VarDirection::eInput,
-        /*bitwidth =*/1,
-        "clk",
-        /*alias handle =*/0
-    ), 1u);
-
-    // Second Call CreateVar
-    EXPECT_EQ(writer.CreateVar(
-        fst::Hierarchy::VarType::eVcdPort,
-        fst::Hierarchy::VarDirection::eOutput,
-        /*bitwidth =*/0xd, // don't care
-        "aliasclk",
-        /*alias handle =*/1
-    ), 1u);
-
-    // Get the hierarchy buffer content
-    string buf = GetHierarchyBuffer(writer);
-    // expected: Type, Direction, Name, bitwidth, Alias Handle
-    // FIXME: in fstapi.c:2598 it writes len, zero, zero for normal variable this may be a bug
-    string expected = "\x10\x01" "clk\x00\x01\x00"s \
-                      "\x12\x02" "aliasclk\x00\x0d\x01"s;
-    EXPECT_EQ(buf, expected);
-}
-
-TEST_F(WriterTest, CreateAliasOutOfRange) {
-    Writer writer;
-    // Call CreateVar
-    EXPECT_EQ(writer.CreateVar(
-        fst::Hierarchy::VarType::eVcdWire,
-        fst::Hierarchy::VarDirection::eInput,
-        /*bitwidth =*/16,
-        "mode",
-        /*alias handle =*/0
-    ), 1u);
-
-    // Get the hierarchy buffer content
-    string buf = GetHierarchyBuffer(writer);
-    // expected: Type, Direction, Name, bitwidth, Alias Handle
-    // FIXME: in fstapi.c:2598 it writes len, zero, zero for normal variable this may be a bug
-    string expected = "\x10\x01mode\x00\x10\x00"s;
-    EXPECT_EQ(buf, expected);
-}
-
-TEST_F(WriterTest, Scope) {
-    Writer writer;
-    // Set Scope
-    writer.SetScope(
-        fst::Hierarchy::ScopeType::eVcdModule,
-        "top",
-        "component"); // TODO: what is this?
-    writer.Upscope();
-
-    // Get the hierarchy buffer content
-    string buf = GetHierarchyBuffer(writer);
-    // expected: Scope Type, Name, component, Upscope
-    string expected = "\xfe\x00top\x00" "component\x00" \
-                      "\xff"s;
-    EXPECT_EQ(buf, expected);
-}
-
-TEST_F(WriterTest, CreateVarVcdReal) {
-    Writer writer;
-    // Call CreateVar with eVcdReal
-    EXPECT_EQ(writer.CreateVar(
-        fst::Hierarchy::VarType::eVcdReal,
-        fst::Hierarchy::VarDirection::eInput,
-        /*bitwidth =*/0, // bitwidth is ignored for real
-        "real_val",
-        /*alias handle =*/0
-    ), 1u);
-
-    // Get the hierarchy buffer content
-    string buf = GetHierarchyBuffer(writer);
-    // For eVcdReal, bitwidth should be encoded as 8 bytes (64 bits)
-    // Type: 0x1a, Direction: 0x01, Name: "real_val", bitwidth: 0x08,  Alias: 0x00
-    string expected = "\x03\x01real_val\x00\x08\x00"s;
-    EXPECT_EQ(buf, expected);
-}
-
-TEST_F(WriterTest, GeometryBufferNormalVar) {
-    Writer writer;
-    EXPECT_EQ(writer.CreateVar(
-        fst::Hierarchy::VarType::eVcdWire,
-        fst::Hierarchy::VarDirection::eInput,
-        /*bitwidth =*/15,
-        "data",
-        /*alias handle =*/0
-    ), 1u);
-    string buf = GetGeometryBuffer(writer);
-    string expected = "\x0f"s;
-    EXPECT_EQ(buf, expected);
-}
-
-TEST_F(WriterTest, GeometryBufferRealVar) {
-    Writer writer;
-    EXPECT_EQ(writer.CreateVar(
-        fst::Hierarchy::VarType::eVcdReal,
-        fst::Hierarchy::VarDirection::eInput,
-        /*bitwidth =*/0,
-        "real_data",
-        /*alias handle =*/0
-    ), 1u);
-    string buf = GetGeometryBuffer(writer);
-    string expected = "\x00"s;
-    EXPECT_EQ(buf, expected);
-}
-
-TEST_F(WriterTest, GeometryBufferZerobitwidthVar) {
-    Writer writer;
-    EXPECT_EQ(writer.CreateVar(
-        fst::Hierarchy::VarType::eVcdWire,
-        fst::Hierarchy::VarDirection::eInput,
-        /*bitwidth =*/0,
-        "zero",
-        /*alias handle =*/0
-    ), 1u);
-    string buf = GetGeometryBuffer(writer);
-    // leb128 encoding of 0xffffffff
-    string expected = "\xFF\xFF\xFF\xFF\x0F"s;
-    EXPECT_EQ(buf, expected);
-}
 
 ////////////////////////////////////////////////
 // Tests for FlushValueChangeData_ValueChanges_UniquifyWaveData
@@ -304,7 +139,10 @@ TEST_F(WriterTest, FlushValueChangeData_ValueChanges_EncodePositionsAndWriteWave
         0,
     };
     ostringstream os;
-    FlushValueChangeData_ValueChanges_EncodePositionsAndWriteUniqueWaveData(os, data, positions);
+    uint64_t count = FlushValueChangeData_ValueChanges_EncodePositionsAndWriteUniqueWaveData(os, data, positions);
+
+    // Verify count: 2 non-empty blocks ('ab' and 'cde') passed through
+    EXPECT_EQ(count, 2);
 
     EXPECT_EQ(positions[0], 0);
     EXPECT_EQ(positions[1], 1);

@@ -55,7 +55,7 @@ struct ValueChangeData {
 	static std::vector<int64_t> UniquifyWaveData(
 		std::vector<std::vector<char>> &data
 	);
-	static void EncodePositionsAndWriteUniqueWaveData(
+	static uint64_t EncodePositionsAndWriteUniqueWaveData(
 		std::ostream &os,
 		const std::vector<std::vector<char>> &unique_data,
 		std::vector<int64_t> &positions

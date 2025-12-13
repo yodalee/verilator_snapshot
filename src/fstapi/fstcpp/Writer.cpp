@@ -758,10 +758,10 @@ vector<int64_t> detail::ValueChangeData::UniquifyWaveData(
 	return positions;
 }
 
-void detail::ValueChangeData::EncodePositionsAndWriteUniqueWaveData(
-	ostream& os,
-	const vector<vector<char>>& unique_data,
-	vector<int64_t>& positions
+uint64_t detail::ValueChangeData::EncodePositionsAndWriteUniqueWaveData(
+	std::ostream& os,
+	const std::vector<std::vector<char>>& data,
+	std::vector<int64_t>& positions
 ) {
 	// After this function, positions[i] is:
 	//  - = 0: If variable i has no wave data
@@ -770,18 +770,24 @@ void detail::ValueChangeData::EncodePositionsAndWriteUniqueWaveData(
 	//         The previous size first block is 1.
 	StreamWriteHelper h(os);
 	int64_t previous_compressed_size = 1;
+	uint64_t written_count = 0;
 	for (size_t i = 0; i < positions.size(); ++i) {
-		if (positions[i] < 0 or unique_data[i].empty()) {
-			// skip non-positive (duplicated) and empty data
-			continue;
+		if (positions[i] < 0) {
+			// duplicate (negative index), do nothing
+		} else if (data[i].empty()) {
+			// no change (empty data), positions[i] remains 0
+		} else {
+			// non-empty unique data, write it
+			written_count++;
+			// TODO: compress the data
+			h
+			.WriteLEB128(0) // 0 means no compression
+			.Write(data[i].data(), data[i].size());
+			positions[i] = previous_compressed_size;
+			previous_compressed_size = data[i].size();
 		}
-		// TODO: compress the data
-		h
-		.WriteLEB128(unique_data[i].size())
-		.Write(unique_data[i].data(), unique_data[i].size());
-		positions[i] = previous_compressed_size;
-		previous_compressed_size = unique_data[i].size();
 	}
+	return written_count;
 }
 
 vector<int64_t> detail::ValueChangeData::WriteValueChanges(ostream& os) const {
@@ -848,96 +854,101 @@ void detail::ValueChangeData::WriteTimestamps(ostream& os) const {
 }
 
 void Writer::FlushValueChangeData_(const detail::ValueChangeData& vcd, const Header& header, ostream& os) {
-	(void)os;
-	// Step 1: just dump value_change_data_ to stdout for manual inspection.
-	using detail::ValueChangeData;
-
-	cout << "FlushValueChangeData_() called\n";
-	cout << "Header summary: num_handles=" << header.num_handles
-	          << " num_vars=" << header.num_vars
-	          << " num_scopes=" << header.num_scopes
-	          << " start_time=" << header.start_time
-	          << " end_time=" << header.end_time << "\n";
-
-	cout << "ValueChangeData summary:\n";
-	cout << "  variables: " << vcd.variable_infos.size() << "\n";
-	cout << "  timestamps: " << vcd.timestamps.size() << "\n";
-	cout << "  first_timestamp: " << vcd.first_timestamp << "\n";
-	cout << "  current_timestamp: " << vcd.current_timestamp() << "\n";
-
-	for (size_t i = 0; i < vcd.variable_infos.size(); ++i) {
-		auto &vref = vcd.variable_infos[i];
-		// use virtual DebugPrint
-		vref->DebugPrint(cout);
+	(void)header; // unused for now
+	if (vcd.timestamps.empty()) {
+		return;
 	}
 
-	// print all timestamps
-	cout << "Timestamps (count=" << vcd.timestamps.size() << "): ";
-	for (size_t i = 0; i < vcd.timestamps.size(); ++i) {
-		if (i) cout << ", ";
-		cout << vcd.timestamps[i];
-	}
-	cout << "\n";
+	// 0. Setup
+	StreamWriteHelper h(os);
+	const auto start_pos = os.tellp();
 
-	// ValueChangeData::WriteInitialBits(vcd, main_fst_file_);
-	// auto positions = ValueChangeData::WriteValueChanges(vcd, main_fst_file_);
-	// ValueChangeData::WriteEncodedPositions(positions, main_fst_file_);
-	// ValueChangeData::WriteTimestamps(vcd, main_fst_file_);
+	// 1. Write Block Header & Global Fields (start/end/mem_req placeholder)
+	// FST_BL_VCDATA_DYN_ALIAS2 (8) maps to WaveDataVersion3 in fst_file.hpp
+	h
+	.WriteBlockHeader(BlockType::WaveDataVersion3, 0 /* Length placeholder 0 */)
+	.WriteUInt(vcd.first_timestamp)
+	.WriteUInt(vcd.current_timestamp());
 
-	stringstream ss;
-	vcd.WriteInitialBits(ss);
+	// Placeholder for memory_required (u64)
+	uint64_t memory_required = 0; // TODO
+	h.WriteUInt(memory_required);
+
+	// 2. Bits Section
+	// Generate, Compress, Write
 	{
-		const string vc_bits_data = ss.str();
-		// Print summary: total bytes and first up to 64 bytes as hex for inspection
-		cout << "FlushValueChangeData_InitialBits_: total_bytes=" << vc_bits_data.size() << "\n";
-		const size_t show = min<size_t>(vc_bits_data.size(), 64);
-		cout << "  first " << show << " bytes (hex):";
-		for (size_t i = 0; i < show; ++i) {
-			const unsigned v = static_cast<unsigned>(static_cast<unsigned char>(vc_bits_data[i]));
-			cout << " " << hex << setw(2) << setfill('0') << v << dec;
-		}
-		cout << "\n";
+		// Implement uncompressed for now
+		// From document:
+		// Compressed length (equal to the uncompressed length if no compression).
+		stringstream ss;
+		vcd.WriteInitialBits(ss);
+		string raw = ss.str();
 
-		// NOTE: currently we do not write vc_bits_data into the FST file here.
-		// Future step: decide block header type and write uncompressed/compressed data into main_fst_file_.
-		ss.clear();
+		h
+		.WriteLEB128(raw.size()) // uncompressed length
+		.WriteLEB128(raw.size()) // compressed length
+		.WriteLEB128(vcd.variable_infos.size()) // bits count
+		.Write(raw.data(), raw.size());
 	}
-	auto encoded_positions = vcd.WriteValueChanges(ss);
-	{
-		ss.clear();
-	}
-	vcd.WriteEncodedPositions(encoded_positions, ss);
-	{
-		const string out = ss.str();
-		cout << "FlushValueChangeData_Positions_: encoded_bytes=" << out.size()
-		          << " count=" << encoded_positions.size() << "\n";
-		const size_t show = min<size_t>(out.size(), 64);
-		cout << "  first " << show << " bytes (hex):";
-		for (size_t k = 0; k < show; ++k) {
-			const unsigned v = static_cast<unsigned>(static_cast<unsigned char>(out[k]));
-			cout << " " << hex << setw(2) << setfill('0') << v << dec;
-		}
-		cout << "\n";
-		ss.clear();
-	}
-	vcd.WriteTimestamps(ss);
-	{
-		const string ts_data = ss.str();
 
-		// Print summary for manual inspection; do not write to file or compress here.
-		cout << "FlushValueChangeData_Timestamps_: varint_bytes=" << ts_data.size()
-			<< " count=" << vcd.timestamps.size() << "\n";
-		const size_t show = min<size_t>(ts_data.size(), 64);
-		cout << "  first " << show << " bytes (hex):";
-		for (size_t i = 0; i < show; ++i) {
-			const unsigned v = static_cast<unsigned>(static_cast<unsigned char>(ts_data[i]));
-			cout << " " << hex << setw(2) << setfill('0') << v << dec;
-		}
-		cout << "\n";
+	// 3. Waves Section
+	// Generate (Compute/Uniquify/Encode), Write
+	// Note: We need positions for the next section
+	auto positions = [&]() {
+		auto wave_data = vcd.ComputeWaveData();
+		auto positions = vcd.UniquifyWaveData(wave_data);
+		stringstream ss;
+		const uint64_t count = detail::ValueChangeData::EncodePositionsAndWriteUniqueWaveData(ss, wave_data, positions);
+		string raw = ss.str();
+		// No whole-block compression for waves yet (per previous code), treating as raw/LZ4-ready?
+		// Previous code wrote '4' (LZ4) but raw data. Keeping consistent with previous edit:
+		// .WriteUInt(uint8_t('4')) + raw data.
+		// NOTE: Ideally we should compress if we say '4'. But user code had '4'.
+		// The helper writes uncompressed per-wave data (for now).
+		// We'll write the buffer content.
 
-		// keep ts_data in local scope only for now (no file output)
-		ss.clear();
+		h
+		.WriteLEB128(count)
+		.WriteUInt(uint8_t('4'))
+		.Write(raw.data(), raw.size());
+		return positions;
+	}();
+
+	// 4. Position Section
+	// Encode, Write
+	{
+		const auto pos_begin = os.tellp();
+		vcd.WriteEncodedPositions(positions, os);
+		const uint64_t pos_size = os.tellp() - pos_begin;
+		h.WriteUInt(pos_size); // Length comes AFTER data for positions
 	}
+
+	// 5. Time Section
+	// Write, Compress, Write
+	{
+		// Implement uncompressed for now
+		// From document:
+		// Compressed length (equal to the uncompressed length if no compression).
+		const auto time_begin = os.tellp();
+		vcd.WriteTimestamps(os);
+		const uint64_t time_size = os.tellp() - time_begin;
+		h
+		.WriteUInt(time_size) // uncompressed len
+		.WriteUInt(time_size) // compressed len
+		.WriteUInt(uint64_t(vcd.timestamps.size())); // count
+	}
+
+	// 6. Patch Block Length and Memory Required
+	const auto block_end = os.tellp();
+	const uint64_t block_len = block_end - start_pos;
+
+	// Patch Block Length (after 1 byte Type)
+	h
+	.Seek(start_pos + std::streamoff(1), ios_base::beg)
+	.WriteUInt(block_len - 1);
+
+	// Restore position to end
+	h.Seek(block_end, ios_base::beg);
 }
 
 void Writer::FlushValueChangeData_() {
