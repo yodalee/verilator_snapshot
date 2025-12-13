@@ -6,12 +6,10 @@
 #include <charconv>
 #include <iomanip>
 #include <iostream>
-#include <limits>
 #include <sstream>
 #include <stdexcept>
 #include <string>
 #include <unordered_map>
-#include <variant>
 #include <vector>
 // Other libraries' .h files.
 #include <lz4.h>
@@ -389,11 +387,18 @@ void Writer::Open(const string_view name) {
 
 void Writer::Close() {
 	if (not main_fst_file_.is_open()) return;
-	FlushValueChangeData_();
-	WriteHeader_();
-	AppendGeometry_();
-	AppendHierarchy_();
-	AppendBlackout_();
+	// Finalize header fields
+	if (header_.date[0] == '\0') {
+		// date is not set yet, set to the current date
+		SetDate();
+	}
+	if (header_.start_time == uint64_t(-1)) {
+		header_.start_time = 0;
+	}
+	WriteHeader_(header_, main_fst_file_);
+	AppendGeometry_(main_fst_file_);
+	AppendHierarchy_(main_fst_file_);
+	AppendBlackout_(main_fst_file_);
 	main_fst_file_.close();
 }
 
@@ -568,38 +573,29 @@ void Writer::EmitValueChange(Handle handle, const char *val) {
 /////////////////////////////////////////
 // File flushing functions
 /////////////////////////////////////////
-void Writer::WriteHeader_() {
-	StreamWriteHelper h(main_fst_file_);
-
-	// Finalize header fields
-	if (header_.date[0] == '\0') {
-		// date is not set yet, set to the current date
-		SetDate();
-	}
-	if (header_.start_time == uint64_t(-1)) {
-		header_.start_time = 0;
-	}
+void Writer::WriteHeader_(const Header& header, ostream& os) {
+	StreamWriteHelper h(os);
 
 	// Actual write
 	h
 	.Seek(streampos(0), ios_base::beg)
 	.WriteBlockHeader(BlockType::Header, HeaderInfo::total_size)
-	.WriteUInt(header_.start_time)
-	.WriteUInt(header_.end_time)
+	.WriteUInt(header.start_time)
+	.WriteUInt(header.end_time)
 	.WriteFloat(HeaderInfo::kEndianessMagicIdentifier)
-	.WriteUInt(header_.writer_memory_use)
-	.WriteUInt(header_.num_scopes)
-	.WriteUInt(header_.num_vars)
-	.WriteUInt(header_.num_handles)
-	.WriteUInt(header_.num_value_change_data_blocks)
-	.WriteUInt(header_.timescale)
-	.Write(header_.writer, sizeof(header_.writer))
-	.Write(header_.date, sizeof(header_.date))
+	.WriteUInt(header.writer_memory_use)
+	.WriteUInt(header.num_scopes)
+	.WriteUInt(header.num_vars)
+	.WriteUInt(header.num_handles)
+	.WriteUInt(header.num_value_change_data_blocks)
+	.WriteUInt(header.timescale)
+	.Write(header.writer, sizeof(header.writer))
+	.Write(header.date, sizeof(header.date))
 	.Fill('\0', HeaderInfo::Size::reserved)
-	.WriteUInt(static_cast<uint8_t>(header_.filetype))
-	.WriteUInt(header_.timezero);
+	.WriteUInt(static_cast<uint8_t>(header.filetype))
+	.WriteUInt(header.timezero);
 
-	DCHECK_EQ(main_fst_file_.tellp(), HeaderInfo::total_size + kSharedBlockHeaderSize);
+	DCHECK_EQ(os.tellp(), HeaderInfo::total_size + kSharedBlockHeaderSize);
 };
 
 static vector<char> CompressUsingZlib(const string& uncompressed_data) {
@@ -635,7 +631,7 @@ static auto SelectSmaller(const vector<char>& compressed_data, const string& unc
 
 // AppendHierarchy_ and AppendGeometry_ shares a very similar structure
 // But they are slightly different in the original C implementation...
-void Writer::AppendGeometry_() {
+void Writer::AppendGeometry_(ostream& os) {
 	const string& geometry_uncompressed_data = geometry_buffer_.str();
 	if (geometry_uncompressed_data.empty()) {
 		// skip the geometry block if there is no data
@@ -644,7 +640,7 @@ void Writer::AppendGeometry_() {
 	vector<char> geometry_compressed_data = CompressUsingZlib(geometry_uncompressed_data);
 	const auto [selected_data, selected_size] = SelectSmaller(geometry_compressed_data, geometry_uncompressed_data);
 
-	StreamWriteHelper h(main_fst_file_);
+	StreamWriteHelper h(os);
 	h
 	.Seek(0, ios_base::end)
 	// 16 is for the uncompressed_size and header_.num_handles
@@ -656,7 +652,7 @@ void Writer::AppendGeometry_() {
 	.Write(selected_data, selected_size);
 }
 
-void Writer::AppendHierarchy_() {
+void Writer::AppendHierarchy_(ostream& os) {
 	const string& hierarchy_uncompressed_data = hierarchy_buffer_.str();
 	if (hierarchy_uncompressed_data.empty()) {
 		// skip the hierarchy block if there is no data
@@ -674,7 +670,7 @@ void Writer::AppendHierarchy_() {
 		compressed_bound
 	);
 
-	StreamWriteHelper h(main_fst_file_);
+	StreamWriteHelper h(os);
 	h
 	.Seek(0, ios_base::end)
 	// +16 is for the uncompressed_size
@@ -683,14 +679,14 @@ void Writer::AppendHierarchy_() {
 	.Write(hierarchy_compressed_data.data(), compressed_size);
 }
 
-void Writer::AppendBlackout_() {
+void Writer::AppendBlackout_(ostream& os) {
 	if (blackout_data_.count == 0) {
 		// skip the blackout block if there is no data
 		return;
 	}
 	const string& blackout_data = blackout_data_.buffer.str();
-	const auto begin_of_blackout_block = main_fst_file_.tellp();
-	StreamWriteHelper h(main_fst_file_);
+	const auto begin_of_blackout_block = os.tellp();
+	StreamWriteHelper h(os);
 	h
 	// skip the block header
 	.Seek(kSharedBlockHeaderSize, ios_base::end)
@@ -698,7 +694,7 @@ void Writer::AppendBlackout_() {
 	.WriteLEB128(blackout_data.size())
 	.Write(blackout_data.data(), blackout_data.size());
 
-	const auto size_of_blackout_block = main_fst_file_.tellp() - begin_of_blackout_block;
+	const auto size_of_blackout_block = os.tellp() - begin_of_blackout_block;
 	h
 	// go back to the beginning of the block
 	.Seek(begin_of_blackout_block, ios_base::beg)
@@ -706,19 +702,19 @@ void Writer::AppendBlackout_() {
 	.WriteBlockHeader(BlockType::Blackout, size_of_blackout_block - kSharedBlockHeaderSize);
 }
 
-void Writer::FlushValueChangeData_InitialBits_(ostream& os) {
+void detail::ValueChangeData::WriteInitialBits(ostream& os) const {
 	// Build vc_bits_data by concatenating each variable's initial bits as documented.
 	// We will not compress for now; just generate the raw bytes and print summary to stdout.
-	for (size_t i = 0; i < value_change_data_.variable_infos.size(); ++i) {
-		auto &vref = value_change_data_.variable_infos[i];
+	for (size_t i = 0; i < variable_infos.size(); ++i) {
+		auto &vref = variable_infos[i];
 		vref->DumpInitialBits(os);
 	}
 }
 
-vector<vector<char>> Writer::FlushValueChangeData_ValueChanges_ComputeWaveData_() {
+vector<vector<char>> detail::ValueChangeData::ComputeWaveData() const {
 	stringstream ss;
 	vector<vector<char>> data;
-	for (auto& v : value_change_data_.variable_infos) {
+	for (auto& v : variable_infos) {
 		v->DumpValueChanges(ss);
 		const string& s = ss.str();
 		data.emplace_back(s.begin(), s.end());
@@ -727,26 +723,25 @@ vector<vector<char>> Writer::FlushValueChangeData_ValueChanges_ComputeWaveData_(
 	return data;
 }
 
-vector<int64_t> Writer::FlushValueChangeData_ValueChanges_UniquifyWaveData_(
+vector<int64_t> detail::ValueChangeData::UniquifyWaveData(
 	vector<vector<char>>& data
 ) {
 	// After this function, positions[i] is:
-	//  - < 0: The negative index of the duplicated wave data block
-	//  - >= 0: otherwise
+	//  - = 0: If data[i] is unique (first occurrence)
+	//  - < 0: If data[i] is a duplicate, encoded as -(original_index + 1)
 	vector<int64_t> positions(data.size(), 0);
 	struct MyHash {
 		size_t operator()(const vector<char>* vec) const {
-			constexpr size_t kNumBytes = sizeof(size_t);
-			// sample uniformly from vec to compute hash
-			size_t ret = 0;
-			for (size_t i = 0; i < kNumBytes; ++i) {
-				const size_t index = (vec->size() * i) / kNumBytes;
-				ret ^= (static_cast<size_t>((*vec)[index]) << (i * 8));
-			}
-			return ret ^ vec->size();
+			const string_view sv(vec->data(), vec->size());
+			return hash<string_view>()(sv);
 		}
 	};
-	unordered_map<vector<char>*, int64_t, MyHash> data_map;
+	struct MyEqual {
+		bool operator()(const vector<char>* a, const vector<char>* b) const {
+			return *a == *b;
+		}
+	};
+	unordered_map<const vector<char>*, int64_t, MyHash, MyEqual> data_map;
 	for (size_t i = 0; i < data.size(); ++i) {
 		if (data[i].empty()) {
 			continue;
@@ -755,7 +750,7 @@ vector<int64_t> Writer::FlushValueChangeData_ValueChanges_UniquifyWaveData_(
 		auto [it, inserted] = data_map.emplace(&data[i], static_cast<int64_t>(i));
 		if (not inserted) {
 			// duplicated wave data found
-			positions[i] = -it->second;
+			positions[i] = -(it->second + 1);
 			// clear data to save memory
 			data[i].clear();
 		}
@@ -763,65 +758,63 @@ vector<int64_t> Writer::FlushValueChangeData_ValueChanges_UniquifyWaveData_(
 	return positions;
 }
 
-void Writer::FlushValueChangeData_ValueChanges_FinalizePositionsAndWrite_(
+void detail::ValueChangeData::EncodePositionsAndWriteUniqueWaveData(
 	ostream& os,
-	vector<vector<char>>& data,
+	const vector<vector<char>>& unique_data,
 	vector<int64_t>& positions
-)
-{
+) {
 	// After this function, positions[i] is:
 	//  - = 0: If variable i has no wave data
-	//  - < 0: The negative index of the duplicated wave data block
+	//  - < 0: The negative value from FlushValueChangeData_ValueChanges_UniquifyWaveData_, unchanged
 	//  - > 0: The size of previous *compressed* wave data block written
 	//         The previous size first block is 1.
 	StreamWriteHelper h(os);
 	int64_t previous_compressed_size = 1;
 	for (size_t i = 0; i < positions.size(); ++i) {
-		if (positions[i] < 0) {
-			throw runtime_error("Remove duplicated wave data not implemented yet, this shall not happen");
-		} else if (data[i].empty()) {
-		} else {
-			// TODO: compress the data
-			h
-			.WriteLEB128(data[i].size())
-			.Write(data[i].data(), data[i].size());
-			positions[i] = previous_compressed_size;
-			previous_compressed_size = data[i].size();
+		if (positions[i] < 0 or unique_data[i].empty()) {
+			// skip non-positive (duplicated) and empty data
+			continue;
 		}
+		// TODO: compress the data
+		h
+		.WriteLEB128(unique_data[i].size())
+		.Write(unique_data[i].data(), unique_data[i].size());
+		positions[i] = previous_compressed_size;
+		previous_compressed_size = unique_data[i].size();
 	}
 }
 
-vector<int64_t> Writer::FlushValueChangeData_ValueChanges_(ostream& os) {
-	auto data = FlushValueChangeData_ValueChanges_ComputeWaveData_();
-	auto positions = FlushValueChangeData_ValueChanges_UniquifyWaveData_(data);
-	FlushValueChangeData_ValueChanges_FinalizePositionsAndWrite_(os, data, positions);
+vector<int64_t> detail::ValueChangeData::WriteValueChanges(ostream& os) const {
+	auto data = ComputeWaveData();
+	auto positions = UniquifyWaveData(data);
+	EncodePositionsAndWriteUniqueWaveData(os, data /* uniquified */, positions);
 	return positions;
 }
 
-void Writer::FlushValueChangeData_Positions_(ostream& os, const vector<int64_t>& positions) {
+void detail::ValueChangeData::WriteEncodedPositions(const vector<int64_t>& encoded_positions, ostream& os) {
 	// Encode positions with the specified run/varint rules into a varint buffer.
 	StreamWriteHelper h(os);
 
 	size_t i = 0;
-	const size_t n = positions.size();
+	const size_t n = encoded_positions.size();
 
 	// arbitrary positive value for prev_negative
 	// so that first negative is always != prev_negative
 	int64_t prev_negative = 1;
 
-	// Please refer to the comments in FlushValueChangeData_ValueChanges_FinalizePositionsAndWrite_()
+	// Please refer to the comments in FlushValueChangeData_ValueChanges_EncodePositionsAndWriteWaveData_()
 	// for the encoding rules of positions.
 	while (i < n) {
-		if (positions[i] == 0) {
+		if (encoded_positions[i] == 0) {
 			// zero: handle zero run-length
 			size_t run = 0;
-			while (i < n && positions[i] == 0) { ++run; ++i; }
+			while (i < n && encoded_positions[i] == 0) { ++run; ++i; }
 			// encode as signed (run << 1) | 0 and write as signed LEB128
 			h.WriteLEB128Signed(run<<1);
 		} else {
 			// non-zero
 			int64_t value_to_encode = 0;
-			int64_t cur = positions[i];
+			int64_t cur = encoded_positions[i];
 			if (cur < 0) {
 				if (cur == prev_negative) {
 					value_to_encode = 0;
@@ -841,12 +834,12 @@ void Writer::FlushValueChangeData_Positions_(ostream& os, const vector<int64_t>&
 	}
 }
 
-void Writer::FlushValueChangeData_Timestamps_(ostream& os) {
+void detail::ValueChangeData::WriteTimestamps(ostream& os) const {
 	// Build LEB128-encoded delta stream (first delta is timestamp[0] - 0)
 	StreamWriteHelper h(os);
 	uint64_t prev = 0;
-	for (size_t i = 0; i < value_change_data_.timestamps.size(); ++i) {
-		const uint64_t cur = value_change_data_.timestamps[i];
+	for (size_t i = 0; i < timestamps.size(); ++i) {
+		const uint64_t cur = timestamps[i];
 		const uint64_t delta = cur - prev;
 		h.WriteLEB128(delta);
 		prev = cur;
@@ -854,44 +847,45 @@ void Writer::FlushValueChangeData_Timestamps_(ostream& os) {
 
 }
 
-void Writer::FlushValueChangeData_() {
+void Writer::FlushValueChangeData_(const detail::ValueChangeData& vcd, const Header& header, ostream& os) {
+	(void)os;
 	// Step 1: just dump value_change_data_ to stdout for manual inspection.
 	using detail::ValueChangeData;
 
 	cout << "FlushValueChangeData_() called\n";
-	cout << "Header summary: num_handles=" << header_.num_handles
-	          << " num_vars=" << header_.num_vars
-	          << " num_scopes=" << header_.num_scopes
-	          << " start_time=" << header_.start_time
-	          << " end_time=" << header_.end_time << "\n";
+	cout << "Header summary: num_handles=" << header.num_handles
+	          << " num_vars=" << header.num_vars
+	          << " num_scopes=" << header.num_scopes
+	          << " start_time=" << header.start_time
+	          << " end_time=" << header.end_time << "\n";
 
 	cout << "ValueChangeData summary:\n";
-	cout << "  variables: " << value_change_data_.variable_infos.size() << "\n";
-	cout << "  timestamps: " << value_change_data_.timestamps.size() << "\n";
-	cout << "  first_timestamp: " << value_change_data_.first_timestamp << "\n";
-	cout << "  current_timestamp: " << value_change_data_.current_timestamp() << "\n";
+	cout << "  variables: " << vcd.variable_infos.size() << "\n";
+	cout << "  timestamps: " << vcd.timestamps.size() << "\n";
+	cout << "  first_timestamp: " << vcd.first_timestamp << "\n";
+	cout << "  current_timestamp: " << vcd.current_timestamp() << "\n";
 
-	for (size_t i = 0; i < value_change_data_.variable_infos.size(); ++i) {
-		auto &vref = value_change_data_.variable_infos[i];
+	for (size_t i = 0; i < vcd.variable_infos.size(); ++i) {
+		auto &vref = vcd.variable_infos[i];
 		// use virtual DebugPrint
 		vref->DebugPrint(cout);
 	}
 
 	// print all timestamps
-	cout << "Timestamps (count=" << value_change_data_.timestamps.size() << "): ";
-	for (size_t i = 0; i < value_change_data_.timestamps.size(); ++i) {
+	cout << "Timestamps (count=" << vcd.timestamps.size() << "): ";
+	for (size_t i = 0; i < vcd.timestamps.size(); ++i) {
 		if (i) cout << ", ";
-		cout << value_change_data_.timestamps[i];
+		cout << vcd.timestamps[i];
 	}
 	cout << "\n";
 
-	// FlushValueChangeData_InitialBits_(main_fst_file_);
-	// auto positions = FlushValueChangeData_ValueChanges_(main_fst_file_);
-	// FlushValueChangeData_Positions_(main_fst_file_, positions);
-	// FlushValueChangeData_Timestamps_(main_fst_file_);
+	// ValueChangeData::WriteInitialBits(vcd, main_fst_file_);
+	// auto positions = ValueChangeData::WriteValueChanges(vcd, main_fst_file_);
+	// ValueChangeData::WriteEncodedPositions(positions, main_fst_file_);
+	// ValueChangeData::WriteTimestamps(vcd, main_fst_file_);
 
 	stringstream ss;
-	FlushValueChangeData_InitialBits_(ss);
+	vcd.WriteInitialBits(ss);
 	{
 		const string vc_bits_data = ss.str();
 		// Print summary: total bytes and first up to 64 bytes as hex for inspection
@@ -908,15 +902,15 @@ void Writer::FlushValueChangeData_() {
 		// Future step: decide block header type and write uncompressed/compressed data into main_fst_file_.
 		ss.clear();
 	}
-	auto positions = FlushValueChangeData_ValueChanges_(ss);
+	auto encoded_positions = vcd.WriteValueChanges(ss);
 	{
 		ss.clear();
 	}
-	FlushValueChangeData_Positions_(ss, positions);
+	vcd.WriteEncodedPositions(encoded_positions, ss);
 	{
 		const string out = ss.str();
 		cout << "FlushValueChangeData_Positions_: encoded_bytes=" << out.size()
-		          << " count=" << positions.size() << "\n";
+		          << " count=" << encoded_positions.size() << "\n";
 		const size_t show = min<size_t>(out.size(), 64);
 		cout << "  first " << show << " bytes (hex):";
 		for (size_t k = 0; k < show; ++k) {
@@ -926,13 +920,13 @@ void Writer::FlushValueChangeData_() {
 		cout << "\n";
 		ss.clear();
 	}
-	FlushValueChangeData_Timestamps_(ss);
+	vcd.WriteTimestamps(ss);
 	{
 		const string ts_data = ss.str();
 
 		// Print summary for manual inspection; do not write to file or compress here.
 		cout << "FlushValueChangeData_Timestamps_: varint_bytes=" << ts_data.size()
-			<< " count=" << value_change_data_.timestamps.size() << "\n";
+			<< " count=" << vcd.timestamps.size() << "\n";
 		const size_t show = min<size_t>(ts_data.size(), 64);
 		cout << "  first " << show << " bytes (hex):";
 		for (size_t i = 0; i < show; ++i) {
@@ -944,6 +938,10 @@ void Writer::FlushValueChangeData_() {
 		// keep ts_data in local scope only for now (no file output)
 		ss.clear();
 	}
+}
+
+void Writer::FlushValueChangeData_() {
+	FlushValueChangeData_(value_change_data_, header_, main_fst_file_);
 }
 
 } // namespace fst
