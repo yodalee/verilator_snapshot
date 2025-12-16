@@ -179,6 +179,10 @@ public:
 	inline void SetScope(Hierarchy::ScopeType scopetype, const char* scopename, const char* scopecomp) {
 		SetScope(scopetype, detail::SafeStringView(scopename), detail::SafeStringView(scopecomp));
 	}
+
+	inline void SetWriterPackType(WriterPackType pack_type) {
+		pack_type_ = pack_type;
+	}
 private:
 	// File/memory buffers
 	// 1. For hierarchy and geometry, we do not keep the data structure, instead we just
@@ -192,6 +196,7 @@ private:
 	detail::BlackoutData blackout_data_;
 	detail::ValueChangeData value_change_data_;
 	bool hierarchy_finalized_ = false;
+	enum WriterPackType pack_type_ = WriterPackType::eZlib;
 
 	// internal helpers
 	static void WriteHeader_(const Header &header, std::ostream &os);
