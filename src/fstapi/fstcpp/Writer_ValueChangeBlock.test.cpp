@@ -135,7 +135,7 @@ TEST_F(WriterTest, FlushValueChangeData_ValueChanges_EncodePositionsAndWriteWave
         0,
         // negative, positions[3] is unchanged
         -99,
-        // second non-empty block, positions[4] will be set to the size of previous block size (2) after encoding
+        // second non-empty block, positions[4] will be set to the size of previous block (2) after encoding
         0,
     };
     ostringstream os;
