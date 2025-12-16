@@ -18,7 +18,7 @@ using namespace std;
 
 namespace fst {
 
-// This test focus on testing the emit functions of writer
+// This test focuses on testing the emit functions of writer
 // The name of this test is not unique
 // but it is not a problem since Writer_*.test.cpp are individual
 // binary files
