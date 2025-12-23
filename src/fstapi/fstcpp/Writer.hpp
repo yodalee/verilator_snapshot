@@ -207,7 +207,7 @@ private:
 		std::ostream &os
 	);
 	void FinalizeHierarchy_() { hierarchy_finalized_ = true; }
-	template <typename ...T>
+	template <typename... T>
 	void EmitValueChangeHelper_(Handle handle, T&&... val);
 };
 

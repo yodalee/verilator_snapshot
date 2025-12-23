@@ -92,7 +92,7 @@ struct VariableInfoDouble : public ValueChangeData::VariableInfoBase {
 	}
 
 	void EmitValueChange(uint64_t current_time_index, const uint64_t val) override {
-		if (current_time_index+1 == 0) {
+		if (current_time_index + 1 == 0) {
 			// This is the first value change, we need to remove everything
 			// and then add the new value
 			change_entries.resize(0);
@@ -280,7 +280,7 @@ struct VariableInfoLongInt : public ValueChangeData::VariableInfoBase {
 
 	void EmitValueChange(uint64_t current_time_index, const uint64_t *val, EncodingType encoding) override {
 		if (current_time_index+1 == 0) {
-			// This is the first value change (si, we need to remove everything
+			// This is the first value change (so, we need to remove everything
 			// and then add the new value
 			change_entries.resize(0);
 			value_changes.resize(0);
@@ -524,11 +524,11 @@ void Writer::EmitDumpActive(bool enable) {
 	blackout_data_.EmitDumpActive(value_change_data_.current_timestamp(), enable);
 }
 
-template<typename ...T>
+template<typename... T>
 void Writer::EmitValueChangeHelper_(Handle handle, T&&... val) {
 	FinalizeHierarchy_();
 	auto& var_info = value_change_data_.variable_infos[handle - 1];
-	var_info->EmitValueChange(value_change_data_.timestamps.size()-1, std::forward<T>(val)...);
+	var_info->EmitValueChange(value_change_data_.timestamps.size() - 1, std::forward<T>(val)...);
 }
 
 void Writer::EmitValueChange(Handle handle, const uint32_t *val, EncodingType encoding) {
@@ -544,6 +544,7 @@ void Writer::EmitValueChange(Handle handle, uint64_t val) {
 }
 
 void Writer::EmitValueChange(Handle handle, const char *val) {
+	FinalizeHierarchy_();
 	auto &var_info = value_change_data_.variable_infos.at(handle - 1);
 	const uint32_t bitwidth = var_info->bitwidth;
 	CHECK_NE(bitwidth, 0);
@@ -765,8 +766,8 @@ uint64_t detail::ValueChangeData::EncodePositionsAndWriteUniqueWaveData(
 	// After this function, positions[i] is:
 	//  - = 0: If variable i has no wave data
 	//  - < 0: The negative value from FlushValueChangeData_ValueChanges_UniquifyWaveData_, unchanged
-	//  - > 0: The size of previous *compressed* wave data block written
-	//         The previous size first block is 1.
+	//  - > 0: The cumulative offset (in bytes) in the output stream where this
+	//         variable's wave data block starts; the first block starts at offset 1.
 	StreamWriteHelper h(os);
 	int64_t previous_offset = 1;
 	uint64_t written_count = 0;
@@ -783,7 +784,8 @@ uint64_t detail::ValueChangeData::EncodePositionsAndWriteUniqueWaveData(
 			.WriteLEB128(0) // 0 means no compression
 			.Write(data[i].data(), data[i].size());
 			positions[i] = previous_offset;
-			previous_offset += data[i].size();
+			// advance by the size of the compression flag (LEB128-encoded 0 == 1 byte) plus data
+			previous_offset += 1 + data[i].size();
 		}
 	}
 	return written_count;
