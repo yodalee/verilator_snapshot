@@ -239,11 +239,18 @@ struct VariableInfoScalarInt : public ValueChangeData::VariableInfoBase {
 		} else {
 			const T* value_ptr = value_changes.data();
 			value_ptr += static_cast<unsigned>(change_entries[0].encoding);
+			uint64_t prev_time_index = 0;
 			for (size_t i = 1; i < change_entries.size(); ++i) {
-				const bool all_binary = change_entries[i].encoding == EncodingType::eBinary;
-				uint64_t time_index = change_entries[i].time_index;
-				// TODO: what shall I write?
-				h.WriteLEB128(time_index << 1 | uint64_t(all_binary));
+				const bool has_non_binary = change_entries[i].encoding != EncodingType::eBinary;
+				const uint64_t delta_time_index = change_entries[i].time_index - prev_time_index;
+				prev_time_index = change_entries[i].time_index;
+				h
+				.WriteLEB128((delta_time_index << 1) | has_non_binary)
+				// TODO: only work for <= 8 bit integer
+				// ??? why shift 6? since we only test 2 bit and the spec requires us to write from the MSB?
+				// must confirm......
+				.WriteUInt<uint8_t>(value_ptr[0]<<6);
+				cout << "(" << delta_time_index << ", " << has_non_binary << ", " << (value_ptr[0]<<6) << ")" << endl;
 				value_ptr += static_cast<unsigned>(change_entries[i].encoding);
 			}
 		}
@@ -578,7 +585,7 @@ void Writer::WriteHeader_(const Header& header, ostream& os) {
 
 	// Actual write
 	h
-	.Seek(streampos(0), ios_base::beg)
+	.Seek(streamoff(0), ios_base::beg)
 	.WriteBlockHeader(BlockType::Header, HeaderInfo::total_size)
 	.WriteUInt(header.start_time)
 	.WriteUInt(header.end_time)
@@ -766,10 +773,10 @@ uint64_t detail::ValueChangeData::EncodePositionsAndWriteUniqueWaveData(
 	// After this function, positions[i] is:
 	//  - = 0: If variable i has no wave data
 	//  - < 0: The negative value from FlushValueChangeData_ValueChanges_UniquifyWaveData_, unchanged
-	//  - > 0: The cumulative offset (in bytes) in the output stream where this
-	//         variable's wave data block starts; the first block starts at offset 1.
+	//  - > 0: The size (in bytes) of the wave data block for *previous* variable,
+	//         the previous block size of the first block is 1 (required by FST spec).
 	StreamWriteHelper h(os);
-	int64_t previous_offset = 1;
+	int64_t previous_size = 1;
 	uint64_t written_count = 0;
 	for (size_t i = 0; i < positions.size(); ++i) {
 		if (positions[i] < 0) {
@@ -779,13 +786,14 @@ uint64_t detail::ValueChangeData::EncodePositionsAndWriteUniqueWaveData(
 		} else {
 			// non-empty unique data, write it
 			written_count++;
-			// TODO: compress the data
+			std::streamoff bytes_written;
 			h
-			.WriteLEB128(0) // 0 means no compression
-			.Write(data[i].data(), data[i].size());
-			positions[i] = previous_offset;
-			// advance by the size of the compression flag (LEB128-encoded 0 == 1 byte) plus data
-			previous_offset += 1 + data[i].size();
+			.BeginOffset(bytes_written)
+			.WriteLEB128(0) // 0 means no compression (TODO: implement compression)
+			.Write(data[i].data(), data[i].size())
+			.EndOffset(&bytes_written);
+			positions[i] = previous_size;
+			previous_size = bytes_written;
 		}
 	}
 	return written_count;
@@ -863,7 +871,7 @@ void Writer::FlushValueChangeData_(const detail::ValueChangeData& vcd, ostream& 
 	.WriteUInt(vcd.current_timestamp());
 
 	// Placeholder for memory_required (u64)
-	uint64_t memory_required = 0; // TODO
+	uint64_t memory_required = 1<<20; // TODO (set 1MB for now)
 	h.WriteUInt(memory_required);
 
 	// 2. Bits Section
@@ -936,7 +944,7 @@ void Writer::FlushValueChangeData_(const detail::ValueChangeData& vcd, ostream& 
 
 	// Patch Block Length (after 1 byte Type)
 	h
-	.Seek(start_pos + std::streamoff(1), ios_base::beg)
+	.Seek(start_pos + streamoff(1), ios_base::beg)
 	.WriteUInt(block_len - 1);
 
 	// Restore position to end

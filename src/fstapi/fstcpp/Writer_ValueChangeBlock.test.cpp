@@ -136,7 +136,7 @@ TEST_F(WriterTest, FlushValueChangeData_ValueChanges_EncodePositionsAndWriteUniq
         // negative, positions[3] is unchanged
         -99,
         // second non-empty block, positions[4] will be set to
-        // the size of previous block (2) + offset of previous block (1)
+        // the size of previous block 3 (LEB128(0) + "ab")
         // after encoding
         0,
     };
@@ -150,7 +150,7 @@ TEST_F(WriterTest, FlushValueChangeData_ValueChanges_EncodePositionsAndWriteUniq
     EXPECT_EQ(positions[1], 1);
     EXPECT_EQ(positions[2], 0);
     EXPECT_EQ(positions[3], -99);
-    EXPECT_EQ(positions[4], 1+2);
+    EXPECT_EQ(positions[4], 3);
 
     // Output: LEB128(0) + "ab" + LEB128(0) + "cde"
     // 0 means no compression
