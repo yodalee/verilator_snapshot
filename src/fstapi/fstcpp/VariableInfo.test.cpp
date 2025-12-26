@@ -82,7 +82,7 @@ TEST(VariableInfoTest, DumpValueChange_SingleBinary) {
     EXPECT_EQ(os.str(), "\x04\x06\x04"s);
 }
 
-TEST(VariableInfoTest, DISABLED_DumpValueChange_DoubleBinary) {
+TEST(VariableInfoTest, DumpValueChange_2bitsBinary) {
     std::unique_ptr<VariableInfoBase> vi(VariableInfoBase::Create(2, false));
     vi->EmitValueChange(1, 0);
     vi->EmitValueChange(3, 1);
@@ -96,7 +96,7 @@ TEST(VariableInfoTest, DISABLED_DumpValueChange_DoubleBinary) {
     EXPECT_EQ(os.str(), "\x02\x00\x04\x40\x04\x80\x04\xc0\x06\x00"s);
 }
 
-TEST(VariableInfoTest, DISABLED_DumpValueChange_10bitsBinary) {
+TEST(VariableInfoTest, DumpValueChange_10bitsBinary) {
     std::unique_ptr<VariableInfoBase> vi(VariableInfoBase::Create(10, false));
     vi->EmitValueChange(1, 0);
     vi->EmitValueChange(3, 1);

@@ -5,10 +5,12 @@
 #include <bit>
 #include <charconv>
 #include <iostream>
+#include <numeric>
 #include <sstream>
 #include <stdexcept>
 #include <string>
 #include <unordered_map>
+#include <utility>
 #include <vector>
 // Other libraries' .h files.
 #include <lz4.h>
@@ -20,6 +22,11 @@
 #include "fstcpp/fst_file.hpp"
 
 using namespace std;
+
+template <typename T>
+inline T AlignToMSB(T u, size_t n) {
+	return u << (sizeof(T)*8 - n);
+}
 
 namespace fst {
 
@@ -246,11 +253,14 @@ struct VariableInfoScalarInt : public ValueChangeData::VariableInfoBase {
 				prev_time_index = change_entries[i].time_index;
 				h
 				.WriteLEB128((delta_time_index << 1) | has_non_binary)
-				// TODO: only work for <= 8 bit integer
-				// ??? why shift 6? since we only test 2 bit and the spec requires us to write from the MSB?
-				// must confirm......
-				.WriteUInt<uint8_t>(value_ptr[0]<<6);
-				cout << "(" << delta_time_index << ", " << has_non_binary << ", " << (value_ptr[0]<<6) << ")" << endl;
+				// FST uses a uncommon way to store the value.
+				// If the value is 10-bits (e.g. logic [9:0] in Verilog),
+				// then the first byte will be [9-:8], then {[1:0], 6'b0}.
+				// So, we first left-align the value to the MSB,
+				// then write the bytes from MSB.
+				.WriteUIntNBytesFromMSB(
+					AlignToMSB(value_ptr[0], bitwidth), (bitwidth+7)/8
+				);
 				value_ptr += static_cast<unsigned>(change_entries[i].encoding);
 			}
 		}
@@ -861,18 +871,21 @@ void Writer::FlushValueChangeData_(const detail::ValueChangeData& vcd, ostream& 
 
 	// 0. Setup
 	StreamWriteHelper h(os);
-	const auto start_pos = os.tellp();
 
 	// 1. Write Block Header & Global Fields (start/end/mem_req placeholder)
 	// FST_BL_VCDATA_DYN_ALIAS2 (8) maps to WaveDataVersion3 in fst_file.hpp
-	h
-	.WriteBlockHeader(BlockType::WaveDataVersion3, 0 /* Length placeholder 0 */)
-	.WriteUInt(vcd.first_timestamp)
-	.WriteUInt(vcd.current_timestamp());
-
-	// Placeholder for memory_required (u64)
-	uint64_t memory_required = 1<<20; // TODO (set 1MB for now)
-	h.WriteUInt(memory_required);
+	// The positions we cannot fill in yet
+	const auto [start_pos, memory_usage_pos] = [&]() {
+		streamoff start_pos, memory_usage_pos;
+		h
+		.BeginOffset(start_pos) // record start position
+		.WriteBlockHeader(BlockType::WaveDataVersion3, 0 /* Length placeholder 0 */)
+		.WriteUInt(vcd.first_timestamp)
+		.WriteUInt(vcd.current_timestamp())
+		.BeginOffset(memory_usage_pos) // record memory usage position
+		.WriteUInt<uint64_t>(0); // placeholder for memory usage
+		return make_pair(start_pos, memory_usage_pos);
+	}();
 
 	// 2. Bits Section
 	// Generate, Compress, Write
@@ -894,24 +907,25 @@ void Writer::FlushValueChangeData_(const detail::ValueChangeData& vcd, ostream& 
 	// 3. Waves Section
 	// Generate (Compute/Uniquify/Encode), Write
 	// Note: We need positions for the next section
-	auto positions = [&]() {
+	const auto [positions, memory_usage] = [&]() {
 		auto wave_data = vcd.ComputeWaveData();
 		auto positions = vcd.UniquifyWaveData(wave_data);
+		const size_t memory_usage = accumulate(
+			wave_data.begin(), wave_data.end(), size_t(0),
+			[](size_t a, const auto& b) { return a + b.size();
+		});
 		stringstream ss;
 		const uint64_t count = detail::ValueChangeData::EncodePositionsAndWriteUniqueWaveData(ss, wave_data, positions);
 		string raw = ss.str();
-		// No whole-block compression for waves yet (per previous code), treating as raw/LZ4-ready?
-		// Previous code wrote '4' (LZ4) but raw data. Keeping consistent with previous edit:
-		// .WriteUInt(uint8_t('4')) + raw data.
-		// NOTE: Ideally we should compress if we say '4'. But user code had '4'.
-		// The helper writes uncompressed per-wave data (for now).
-		// We'll write the buffer content.
-
+		// NOTE: While we write '4' for LZ4, we write uncompressed data.
+		// For each wavedata, if it's `uncompressed_length == 0`,
+		// then it is uncompressed, which effectively disables compression.
+		// This is what we do for now.
 		h
 		.WriteLEB128(count)
 		.WriteUInt(uint8_t('4'))
 		.Write(raw.data(), raw.size());
-		return positions;
+		return make_pair(positions, memory_usage);
 	}();
 
 	// 4. Position Section
@@ -939,16 +953,17 @@ void Writer::FlushValueChangeData_(const detail::ValueChangeData& vcd, ostream& 
 	}
 
 	// 6. Patch Block Length and Memory Required
-	const auto block_end = os.tellp();
-	const uint64_t block_len = block_end - start_pos;
-
-	// Patch Block Length (after 1 byte Type)
+	streamoff end_pos;
 	h
+	.BeginOffset(end_pos)
+	// Patch Block Length (after 1 byte Type)
 	.Seek(start_pos + streamoff(1), ios_base::beg)
-	.WriteUInt(block_len - 1);
-
+	.WriteUInt<uint64_t>(end_pos - start_pos - 1)
+	// Patch Memory Required
+	.Seek(memory_usage_pos, ios_base::beg)
+	.WriteUInt<uint64_t>(memory_usage)
 	// Restore position to end
-	h.Seek(block_end, ios_base::beg);
+	.Seek(end_pos, ios_base::beg);
 }
 
 } // namespace fst

@@ -34,12 +34,23 @@ struct StreamWriteHelper {
 	StreamWriteHelper(std::ostream& os_) : os(&os_) {}
 	StreamWriteHelper(std::ostream* os_) : os(os_) {}
 
+	// Write the entire uint, big-endian
+	// We do not provide little-endian version since FST only uses big-endian
 	template<typename U>
 	StreamWriteHelper& WriteUInt(U u) {
 		if constexpr (std::endian::native == std::endian::little) {
 			u = platform::byteswap(u);
 		}
 		os->write(reinterpret_cast<const char*>(&u), sizeof(u));
+		return *this;
+	}
+
+	template<typename U>
+	StreamWriteHelper& WriteUIntNBytesFromMSB(U u, size_t n) {
+		if constexpr (std::endian::native == std::endian::little) {
+			u = platform::byteswap(u);
+		}
+		os->write(reinterpret_cast<const char*>(&u), n);
 		return *this;
 	}
 
