@@ -140,6 +140,10 @@ struct VariableInfoScalarInt : public ValueChangeData::VariableInfoBase {
 		change_entries[0].encoding = EncodingType::eVerilog;
 	}
 
+    void EmitValueChange(uint64_t current_time_index, const uint32_t *val, EncodingType encoding) override {
+        EmitValueChange(current_time_index, static_cast<const uint64_t>(*val));
+    }
+
 	void EmitValueChange(uint64_t current_time_index, const uint64_t val) override {
 		if (current_time_index+1 == 0) {
 			// This is the first value change, we need to remove everything
@@ -283,6 +287,27 @@ struct VariableInfoLongInt : public ValueChangeData::VariableInfoBase {
 			value_changes.push_back(0);
 		}
 	}
+
+    void EmitValueChange(uint64_t current_time_index, const uint32_t *val, EncodingType encoding) override {
+        if (current_time_index+1 == 0) {
+            // This is the first value change, we need to remove everything
+            // and then add the new value
+            change_entries.resize(0);
+            value_changes.resize(0);
+        }
+        change_entries.push_back({current_time_index, encoding});
+        unsigned nw = num_words() * static_cast<unsigned>(encoding);
+        for (unsigned i = 0; i < nw; ++i) {
+            // Each uint64_t is composed of two uint32_t (little-endian)
+            uint64_t v = 0;
+            unsigned idx = i * 2;
+            v = static_cast<uint64_t>(val[idx]);
+            if (idx + 1 < nw * 2) {
+                v |= (static_cast<uint64_t>(val[idx + 1]) << 32);
+            }
+            value_changes.push_back(v);
+        }
+    }
 
 	void EmitValueChange(uint64_t current_time_index, const uint64_t *val, EncodingType encoding) override {
 		if (current_time_index+1 == 0) {
@@ -509,6 +534,7 @@ Handle Writer::CreateVar(
 	if (not is_alias) {
 		StreamWriteHelper g(geometry_buffer_);
 		// I don't know why the original C implementation encode bitwidth again
+		// but we have to follow it
 		const uint32_t geom_len = (
 			bitwidth == 0 ? uint32_t(-1) :
 			is_real       ? uint32_t(0) :
