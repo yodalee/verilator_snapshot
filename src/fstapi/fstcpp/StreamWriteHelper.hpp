@@ -45,12 +45,19 @@ struct StreamWriteHelper {
 		return *this;
 	}
 
+	// Write the uint, big-endian, left-aligned but only (bitwidth+7)/8 bytes
+	// This is a very special case for value changes
+	// For example, if the value is 10-bits (e.g. logic [9:0] in Verilog),
+	// then the first byte will be [9-:8], then {[1:0], 6'b0}.
 	template<typename U>
-	StreamWriteHelper& WriteUIntNBytesFromMSB(U u, size_t n) {
+	StreamWriteHelper& WriteUIntPartialForValueChange(U u, size_t bitwidth) {
+		// Shift left to align the MSB to the MSB of the uint
+		u <<= sizeof(u) * 8 - bitwidth;
+		// Write the first (bitwidth+7)/8 bytes
 		if constexpr (std::endian::native == std::endian::little) {
 			u = platform::byteswap(u);
 		}
-		os->write(reinterpret_cast<const char*>(&u), n);
+		os->write(reinterpret_cast<const char*>(&u), (bitwidth + 7) / 8);
 		return *this;
 	}
 

@@ -23,11 +23,6 @@
 
 using namespace std;
 
-template <typename T>
-inline T AlignToMSB(T u, size_t n) {
-	return u << (sizeof(T)*8 - n);
-}
-
 namespace fst {
 
 static constexpr uint64_t kInvalidTime = uint64_t(-1);
@@ -248,19 +243,13 @@ struct VariableInfoScalarInt : public ValueChangeData::VariableInfoBase {
 			value_ptr += static_cast<unsigned>(change_entries[0].encoding);
 			uint64_t prev_time_index = 0;
 			for (size_t i = 1; i < change_entries.size(); ++i) {
+				CHECK(change_entries[i].encoding == EncodingType::eBinary); // TODO
 				const bool has_non_binary = change_entries[i].encoding != EncodingType::eBinary;
 				const uint64_t delta_time_index = change_entries[i].time_index - prev_time_index;
 				prev_time_index = change_entries[i].time_index;
 				h
 				.WriteLEB128((delta_time_index << 1) | has_non_binary)
-				// FST uses a uncommon way to store the value.
-				// If the value is 10-bits (e.g. logic [9:0] in Verilog),
-				// then the first byte will be [9-:8], then {[1:0], 6'b0}.
-				// So, we first left-align the value to the MSB,
-				// then write the bytes from MSB.
-				.WriteUIntNBytesFromMSB(
-					AlignToMSB(value_ptr[0], bitwidth), (bitwidth+7)/8
-				);
+				.WriteUIntPartialForValueChange(value_ptr[0], bitwidth);
 				value_ptr += static_cast<unsigned>(change_entries[i].encoding);
 			}
 		}
@@ -364,8 +353,37 @@ struct VariableInfoLongInt : public ValueChangeData::VariableInfoBase {
 	}
 
 	void DumpValueChanges(ostream &os) const override {
-		(void)os;
-		throw runtime_error("TODO: DumpValueChanges not implemented for VariableInfoLongInt");
+		StreamWriteHelper h(os);
+		const unsigned nw = num_words();
+		const uint64_t* value_ptr = value_changes.data();
+		value_ptr += static_cast<unsigned>(change_entries[0].encoding) * nw;
+		uint64_t prev_time_index = 0;
+		for (size_t i = 1; i < change_entries.size(); ++i) {
+			CHECK(change_entries[i].encoding == EncodingType::eBinary); // TODO
+			const bool has_non_binary = change_entries[i].encoding != EncodingType::eBinary;
+			const uint64_t delta_time_index = change_entries[i].time_index - prev_time_index;
+			prev_time_index = change_entries[i].time_index;
+			h
+			.WriteLEB128((delta_time_index << 1) | has_non_binary);
+			if (bitwidth % 64 != 0) {
+				const unsigned remaining = bitwidth % 64;
+				// from nw-1 to 1
+				for (unsigned j = nw-1; j > 0; --j) {
+					h.WriteUInt(
+						(value_ptr[j] << (64-remaining)) |
+						(value_ptr[j-1] >> remaining)
+					);
+				}
+				// 0
+				h.WriteUIntPartialForValueChange(value_ptr[0], remaining);
+			} else {
+				// Write from nw-1 to 0
+				for (unsigned j = nw; j-- > 0;) {
+					h.WriteUInt(value_ptr[j]);
+				}
+			}
+			value_ptr += static_cast<unsigned>(change_entries[i].encoding) * nw;
+		}
 	}
 };
 
@@ -916,13 +934,17 @@ void Writer::FlushValueChangeData_(const detail::ValueChangeData& vcd, ostream& 
 		});
 		stringstream ss;
 		const uint64_t count = detail::ValueChangeData::EncodePositionsAndWriteUniqueWaveData(ss, wave_data, positions);
+		(void)count;
 		string raw = ss.str();
 		// NOTE: While we write '4' for LZ4, we write uncompressed data.
 		// For each wavedata, if it's `uncompressed_length == 0`,
 		// then it is uncompressed, which effectively disables compression.
 		// This is what we do for now.
 		h
-		.WriteLEB128(count)
+		// Note: this is not a typo, I expect we shall write count here.
+		// but the spec indeed write vcd.variable_infos.size(),
+		// which is repeated 1 times in header block, 2 times in valuechange block
+		.WriteLEB128(vcd.variable_infos.size())
 		.WriteUInt(uint8_t('4'))
 		.Write(raw.data(), raw.size());
 		return make_pair(positions, memory_usage);
@@ -960,8 +982,9 @@ void Writer::FlushValueChangeData_(const detail::ValueChangeData& vcd, ostream& 
 	.Seek(start_pos + streamoff(1), ios_base::beg)
 	.WriteUInt<uint64_t>(end_pos - start_pos - 1)
 	// Patch Memory Required
+	// TODO: *1.5 since we are not sure whether we compute memory usage correctly
 	.Seek(memory_usage_pos, ios_base::beg)
-	.WriteUInt<uint64_t>(memory_usage)
+	.WriteUInt<uint64_t>(memory_usage*3/2)
 	// Restore position to end
 	.Seek(end_pos, ios_base::beg);
 }
