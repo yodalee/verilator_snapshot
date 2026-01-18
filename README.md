@@ -2,10 +2,13 @@
 
 An experiment to rewrite `fstapi.c` for better Verilator simulation speed.
 
+# Prerequisite
+
+Clone the [libfstpp](https://github.com/johnjohnlin/libfstpp) in the path `external`.
+
 # Project structure
 Everything is under `src/`
 
-* `fstapi/fstcpp`: The main focus of this repo.
 * `fstapi/gtkwave`: Original fstapi C implementation from GtkWave.
 * `benchmark/`: The directory of overall benchmark cases and test cases
 * `benchmark/verilatorshare`: The snapshot of files to built a verilator project. Copied from version 5.042.
