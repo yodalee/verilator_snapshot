@@ -22,4 +22,5 @@ if(ENABLE_COVERAGE)
 	add_link_options(--coverage)
 endif()
 
+add_subdirectory(external/libfstpp/src external_libfstpp_build)
 add_subdirectory(src)
