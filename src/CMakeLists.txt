@@ -12,8 +12,8 @@ file(GLOB VERILATORSHARE_SRCS
     "${CMAKE_CURRENT_SOURCE_DIR}/verilatorshare/*.cpp"
 )
 add_library(verilatorshare STATIC ${VERILATORSHARE_SRCS})
-target_include_directories(verilatorshare PUBLIC 
+target_include_directories(verilatorshare PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/verilatorshare
+    ${CMAKE_CURRENT_SOURCE_DIR}/verilatorshare/vlstd
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
-target_link_libraries(gtkwave PUBLIC ZLIB::ZLIB lz4)
