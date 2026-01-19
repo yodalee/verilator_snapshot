@@ -1,18 +1,23 @@
 # CMakeLists.txt for benchmark directory
 cmake_minimum_required(VERSION 3.10)
 
-# List all benchmarks
-file(GLOB BENCHMARKS "${CMAKE_CURRENT_SOURCE_DIR}/*")
+# List all benchmarks (hardcoded)
+set(BENCHMARKS RSA256 simple picorv32)
 
-foreach(flong ${BENCHMARKS})
-    get_filename_component(f ${flong} NAME)
-
-    # Gather sources for each benchmark
-    file(GLOB_RECURSE TEST_SRCS
-        "${CMAKE_CURRENT_SOURCE_DIR}/${f}/*.cpp"
-        "${CMAKE_SOURCE_DIR}/src/verilatorshare/*.cpp"
+foreach(f ${BENCHMARKS})
+    # Build verilated source code
+    file(GLOB CORE_SRCS
+        "${CMAKE_CURRENT_SOURCE_DIR}/${f}/fixed/*.cpp"
     )
+    add_library(${f}_rtl EXCLUDE_FROM_ALL STATIC ${CORE_SRCS})
+    target_include_directories(${f}_rtl PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/${f}/fixed)
+    target_link_libraries(${f}_rtl PUBLIC verilatorshare)
 
+    # Build executables for benchmark
+
+    file(GLOB TEST_SRCS
+        "${CMAKE_CURRENT_SOURCE_DIR}/${f}/*.cpp"
+    )
     add_executable(${f} EXCLUDE_FROM_ALL ${TEST_SRCS})
     add_executable(${f}_gtkwave EXCLUDE_FROM_ALL ${TEST_SRCS})
 
@@ -20,19 +25,17 @@ foreach(flong ${BENCHMARKS})
         ${f}
         PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}/${f}/fixed
-        ${CMAKE_SOURCE_DIR}/src/verilatorshare
         ${CMAKE_SOURCE_DIR}/src/gtkwave
     )
     target_include_directories(
         ${f}_gtkwave
         PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}/${f}/fixed
-        ${CMAKE_SOURCE_DIR}/src/verilatorshare
         ${CMAKE_SOURCE_DIR}/src/gtkwave
     )
 
-    target_link_libraries(${f} PRIVATE fstcpp)
-    target_link_libraries(${f}_gtkwave PRIVATE gtkwave)
+    target_link_libraries(${f} PRIVATE ${f}_rtl verilatorshare fstcpp)
+    target_link_libraries(${f}_gtkwave PRIVATE ${f}_rtl verilatorshare gtkwave)
 endforeach()
 
 # Copy firmware for picorv32
