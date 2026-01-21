@@ -21,6 +21,14 @@ foreach(f ${BENCHMARKS})
     add_executable(${f} EXCLUDE_FROM_ALL ${TEST_SRCS})
     add_executable(${f}_gtkwave EXCLUDE_FROM_ALL ${TEST_SRCS})
 
+    # Set output directory for executables
+    set_target_properties(${f} PROPERTIES
+        RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${f}
+    )
+    set_target_properties(${f}_gtkwave PROPERTIES
+        RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${f}
+    )
+
     target_include_directories(
         ${f}
         PRIVATE
@@ -36,8 +44,12 @@ foreach(f ${BENCHMARKS})
 
     target_link_libraries(${f} PRIVATE ${f}_rtl verilatorshare fstcpp)
     target_link_libraries(${f}_gtkwave PRIVATE ${f}_rtl verilatorshare gtkwave)
-endforeach()
 
-# Copy firmware for picorv32
-file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/picorv32/firmware
-     DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+    # Copy firmware if exists
+    file(GLOB FIRMWARE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/${f}/firmware/*")
+    if(FIRMWARE_FILES)
+        file(COPY ${FIRMWARE_FILES}
+            DESTINATION "${CMAKE_BINARY_DIR}/${f}"
+        )
+    endif()
+endforeach()
