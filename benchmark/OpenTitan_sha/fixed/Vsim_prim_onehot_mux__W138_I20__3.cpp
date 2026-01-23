@@ -1,0 +1,3468 @@
+// Verilated -*- C++ -*-
+// DESCRIPTION: Verilator output: Design implementation internals
+// See Vsim.h for the primary calling header
+
+#include "Vsim__pch.h"
+
+void Vsim_prim_onehot_mux__W138_I20___nba_comb__TOP__chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_rf_bignum__DOT__gen_rf_bignum_ff__DOT__u_otbn_rf_bignum_inner__DOT__u_rd_mux_a__0(Vsim_prim_onehot_mux__W138_I20* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+                    Vsim_prim_onehot_mux__W138_I20___nba_comb__TOP__chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_rf_bignum__DOT__gen_rf_bignum_ff__DOT__u_otbn_rf_bignum_inner__DOT__u_rd_mux_a__0\n"); );
+    Vsim__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    auto& vlSelfRef = std::ref(*vlSelf).get();
+    // Body
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__273__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__273__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__274__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__274__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__275__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__275__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__276__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__276__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__277__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__277__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__278__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__278__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__279__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__279__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__280__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__280__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__281__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__281__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__282__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__282__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__283__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__283__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__284__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__284__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__285__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__285__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__286__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__286__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__287__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__287__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__288__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__288__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__289__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__289__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__290__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__290__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__291__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__291__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__292__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__292__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__293__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__293__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__294__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__294__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__295__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__295__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__296__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__296__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__297__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__297__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__298__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__298__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__299__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__299__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__300__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__300__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__301__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__301__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__302__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__302__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__303__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__303__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__304__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__304__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__234__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__234__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__235__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__235__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__236__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__236__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__237__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__237__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__238__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__238__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__239__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__239__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__240__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__240__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__241__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__241__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__242__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__242__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__243__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__243__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__244__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__244__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__245__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__245__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__246__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__246__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__247__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__247__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__248__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__248__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__249__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__249__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__250__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__250__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__251__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__251__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__252__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__252__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__253__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__253__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__254__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__254__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__255__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__255__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__256__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__256__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__257__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__257__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__258__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__258__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__259__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__259__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__260__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__260__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__261__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__261__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__262__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__262__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__263__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__263__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__264__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__264__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__265__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__265__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__195__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__195__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__196__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__196__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__197__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__197__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__198__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__198__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__199__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__199__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__200__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__200__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__201__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__201__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__202__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__202__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__203__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__203__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__204__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__204__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__205__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__205__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__206__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__206__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__207__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__207__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__208__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__208__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__209__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__209__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__210__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__210__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__211__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__211__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__212__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__212__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__213__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__213__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__214__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__214__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__215__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__215__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__216__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__216__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__217__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__217__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__218__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__218__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__219__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__219__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__220__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__220__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__221__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__221__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__222__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__222__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__223__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__223__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__224__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__224__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__225__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__225__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__226__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__226__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__156__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__156__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__157__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__157__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__158__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__158__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__159__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__159__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__160__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__160__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__161__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__161__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__162__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__162__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__163__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__163__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__164__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__164__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__165__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__165__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__166__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__166__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__167__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__167__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__168__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__168__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__169__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__169__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__170__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__170__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__171__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__171__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__172__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__172__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__173__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__173__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__174__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__174__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__175__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__175__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__176__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__176__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__177__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__177__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__178__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__178__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__179__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__179__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__180__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__180__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__181__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__181__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__182__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__182__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__183__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__183__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__184__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__184__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__185__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__185__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__186__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__186__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__187__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__187__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__117__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__117__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__118__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__118__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__119__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__119__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__120__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__120__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__121__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__121__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__122__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__122__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__123__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__123__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__124__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__124__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__125__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__125__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__126__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__126__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__127__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__127__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__128__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__128__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__129__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__129__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__130__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__130__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__131__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__131__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__132__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__132__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__133__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__133__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__134__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__134__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__135__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__135__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__136__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__136__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__137__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__137__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__138__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__138__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__139__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__139__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__140__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__140__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__141__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__141__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__142__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__142__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__143__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__143__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__144__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__144__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__145__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__145__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__146__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__146__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__147__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__147__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__148__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__148__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__78__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__78__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__79__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__79__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__80__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__80__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__81__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__81__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__82__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__82__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__83__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__83__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__84__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__84__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__85__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__85__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__86__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__86__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__87__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__87__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__88__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__88__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__89__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__89__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__90__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__90__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__91__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__91__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__92__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__92__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__93__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__93__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__94__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__94__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__95__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__95__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__96__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__96__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__97__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__97__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__98__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__98__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__99__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__99__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__100__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__100__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__101__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__101__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__102__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__102__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__103__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__103__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__104__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__104__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__105__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__105__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__106__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__106__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__107__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__107__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__108__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__108__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__109__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__109__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__39__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__39__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__40__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__40__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__41__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__41__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__42__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__42__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__43__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__43__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__44__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__44__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__45__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__45__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__46__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__46__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__47__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__47__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__48__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__48__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__49__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__49__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__50__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__50__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__51__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__51__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__52__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__52__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__53__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__53__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__54__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__54__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__55__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__55__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__56__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__56__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__57__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__57__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__58__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__58__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__59__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__59__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__60__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__60__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__61__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__61__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__62__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__62__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__63__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__63__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__64__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__64__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__65__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__65__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__66__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__66__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__67__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__67__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__68__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__68__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__69__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__69__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__70__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__70__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__32__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__32__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__33__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__33__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__34__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__34__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__35__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__35__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__36__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__36__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__37__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__37__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__38__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__38__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__2__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__2__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__3__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__3__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__4__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__4__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__5__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__5__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__6__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__6__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__7__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__7__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__8__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__8__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__9__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__9__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__10__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__10__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__11__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__11__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__12__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__12__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__13__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__13__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__14__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__14__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__15__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__15__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__16__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__16__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__17__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__17__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__18__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__18__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__19__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__19__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__20__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__20__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__21__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__21__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__22__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__22__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__23__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__23__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__24__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__24__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__25__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__25__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__26__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__26__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__27__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__27__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__28__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__28__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__29__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__29__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__30__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__30__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__31__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__31__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__0__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__0__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__1__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__1__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U]);
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1231 = (
+                                                   ((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__1__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 1U) 
+                                                   | (0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__0__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1232 = (
+                                                   ((((((((0U 
+                                                           != vlSelfRef.__PVT__g_in_mux_outer__BRA__31__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                          << 3U) 
+                                                         | ((0U 
+                                                             != vlSelfRef.__PVT__g_in_mux_outer__BRA__30__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                            << 2U)) 
+                                                        | (((0U 
+                                                             != vlSelfRef.__PVT__g_in_mux_outer__BRA__29__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                            << 1U) 
+                                                           | (0U 
+                                                              != vlSelfRef.__PVT__g_in_mux_outer__BRA__28__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                       << 0x0000000cU) 
+                                                      | (((((0U 
+                                                             != vlSelfRef.__PVT__g_in_mux_outer__BRA__27__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                            << 3U) 
+                                                           | ((0U 
+                                                               != vlSelfRef.__PVT__g_in_mux_outer__BRA__26__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                              << 2U)) 
+                                                          | (((0U 
+                                                               != vlSelfRef.__PVT__g_in_mux_outer__BRA__25__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                              << 1U) 
+                                                             | (0U 
+                                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__24__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                         << 8U)) 
+                                                     | ((((((0U 
+                                                             != vlSelfRef.__PVT__g_in_mux_outer__BRA__23__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                            << 3U) 
+                                                           | ((0U 
+                                                               != vlSelfRef.__PVT__g_in_mux_outer__BRA__22__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                              << 2U)) 
+                                                          | (((0U 
+                                                               != vlSelfRef.__PVT__g_in_mux_outer__BRA__21__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                              << 1U) 
+                                                             | (0U 
+                                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__20__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                         << 4U) 
+                                                        | ((((0U 
+                                                              != vlSelfRef.__PVT__g_in_mux_outer__BRA__19__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                             << 3U) 
+                                                            | ((0U 
+                                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__18__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                               << 2U)) 
+                                                           | (((0U 
+                                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__17__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                               << 1U) 
+                                                              | (0U 
+                                                                 != vlSelfRef.__PVT__g_in_mux_outer__BRA__16__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))) 
+                                                    << 0x00000010U) 
+                                                   | (((((((0U 
+                                                            != vlSelfRef.__PVT__g_in_mux_outer__BRA__15__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                           << 3U) 
+                                                          | ((0U 
+                                                              != vlSelfRef.__PVT__g_in_mux_outer__BRA__14__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                             << 2U)) 
+                                                         | (((0U 
+                                                              != vlSelfRef.__PVT__g_in_mux_outer__BRA__13__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                             << 1U) 
+                                                            | (0U 
+                                                               != vlSelfRef.__PVT__g_in_mux_outer__BRA__12__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                        << 0x0000000cU) 
+                                                       | (((((0U 
+                                                              != vlSelfRef.__PVT__g_in_mux_outer__BRA__11__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                             << 3U) 
+                                                            | ((0U 
+                                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__10__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                               << 2U)) 
+                                                           | (((0U 
+                                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__9__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                               << 1U) 
+                                                              | (0U 
+                                                                 != vlSelfRef.__PVT__g_in_mux_outer__BRA__8__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                          << 8U)) 
+                                                      | ((((((0U 
+                                                              != vlSelfRef.__PVT__g_in_mux_outer__BRA__7__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                             << 3U) 
+                                                            | ((0U 
+                                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__6__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                               << 2U)) 
+                                                           | (((0U 
+                                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__5__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                               << 1U) 
+                                                              | (0U 
+                                                                 != vlSelfRef.__PVT__g_in_mux_outer__BRA__4__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                          << 4U) 
+                                                         | (((0U 
+                                                              != vlSelfRef.__PVT__g_in_mux_outer__BRA__3__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                             << 3U) 
+                                                            | (((0U 
+                                                                 != vlSelfRef.__PVT__g_in_mux_outer__BRA__2__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                                << 2U) 
+                                                               | (IData)(vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1231))))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1233[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1232;
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1233[1U] 
+        = (((((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__63__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                  << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__62__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                            << 2U)) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__61__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                        << 1U) | (0U 
+                                                  != vlSelfRef.__PVT__g_in_mux_outer__BRA__60__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+               << 0x0000000cU) | (((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__59__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                     << 3U) | ((0U 
+                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__58__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                               << 2U)) 
+                                   | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__57__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                       << 1U) | (0U 
+                                                 != vlSelfRef.__PVT__g_in_mux_outer__BRA__56__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                  << 8U)) | ((((((0U 
+                                                  != vlSelfRef.__PVT__g_in_mux_outer__BRA__55__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                 << 3U) 
+                                                | ((0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__54__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 2U)) 
+                                               | (((0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__53__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 1U) 
+                                                  | (0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__52__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                              << 4U) 
+                                             | ((((0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__51__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                  << 3U) 
+                                                 | ((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__50__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 2U)) 
+                                                | (((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__49__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 1U) 
+                                                   | (0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__48__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))) 
+            << 0x00000010U) | (((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__47__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                    << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__46__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                              << 2U)) 
+                                  | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__45__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                      << 1U) | (0U 
+                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__44__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                 << 0x0000000cU) | 
+                                (((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__43__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                    << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__42__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                              << 2U)) 
+                                  | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__41__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                      << 1U) | (0U 
+                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__40__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                 << 8U)) | ((((((0U 
+                                                 != vlSelfRef.__PVT__g_in_mux_outer__BRA__39__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                << 3U) 
+                                               | ((0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__38__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                  << 2U)) 
+                                              | (((0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__37__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                  << 1U) 
+                                                 | (0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__36__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                             << 4U) 
+                                            | ((((0U 
+                                                  != vlSelfRef.__PVT__g_in_mux_outer__BRA__35__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                 << 3U) 
+                                                | ((0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__34__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 2U)) 
+                                               | (((0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__33__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 1U) 
+                                                  | (0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__32__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1233[2U] 
+        = (0x0000007fU & ((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__70__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                              << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__69__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                        << 2U)) | (
+                                                   ((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__68__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 1U) 
+                                                   | (0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__67__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                           << 3U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__66__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                      << 2U) | (((0U 
+                                                  != vlSelfRef.__PVT__g_in_mux_outer__BRA__65__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                 << 1U) 
+                                                | (0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__64__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o)))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1234[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1233[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1234[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1233[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1234[2U] 
+        = ((0x00003f80U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1234[2U]) 
+           | (0x00003fffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1233[2U]));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1234[2U] 
+        = ((0x0000007fU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1234[2U]) 
+           | (0x00003f80U & ((((((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__77__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                         & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                 << 3U) | ((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__76__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                   & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                           << 2U)) 
+                               | (((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__75__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                   << 1U) | (0U != 
+                                             (vlSelfRef.__PVT__g_in_mux_outer__BRA__74__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                              & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])))) 
+                              << 0x0000000aU) | (((0U 
+                                                   != 
+                                                   (vlSelfRef.__PVT__g_in_mux_outer__BRA__73__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                    & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                                  << 9U) 
+                                                 | (((0U 
+                                                      != 
+                                                      (vlSelfRef.__PVT__g_in_mux_outer__BRA__72__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                       & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                                     << 8U) 
+                                                    | ((0U 
+                                                        != 
+                                                        (vlSelfRef.__PVT__g_in_mux_outer__BRA__71__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                         & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                                       << 7U))))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1235[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1234[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1235[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1234[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1235[2U] 
+        = ((0xffffc000U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1235[2U]) 
+           | vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1234[2U]);
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1235[2U] 
+        = ((0x00003fffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1235[2U]) 
+           | ((((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__95__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                    << 4U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__94__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                               << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__93__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                         << 2U))) | 
+                  (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__92__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                    << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__91__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                 << 0x0000000dU) | (((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__90__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                       << 3U) | ((0U 
+                                                  != vlSelfRef.__PVT__g_in_mux_outer__BRA__89__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                 << 2U)) 
+                                     | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__88__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                         << 1U) | (0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__87__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                    << 9U)) | (((((
+                                                   (0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__86__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 4U) 
+                                                  | (((0U 
+                                                       != vlSelfRef.__PVT__g_in_mux_outer__BRA__85__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                      << 3U) 
+                                                     | ((0U 
+                                                         != vlSelfRef.__PVT__g_in_mux_outer__BRA__84__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                        << 2U))) 
+                                                 | (((0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__83__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                     << 1U) 
+                                                    | (0U 
+                                                       != vlSelfRef.__PVT__g_in_mux_outer__BRA__82__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                << 4U) 
+                                               | ((((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__81__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 3U) 
+                                                   | ((0U 
+                                                       != vlSelfRef.__PVT__g_in_mux_outer__BRA__80__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                      << 2U)) 
+                                                  | (((0U 
+                                                       != vlSelfRef.__PVT__g_in_mux_outer__BRA__79__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                      << 1U) 
+                                                     | (0U 
+                                                        != vlSelfRef.__PVT__g_in_mux_outer__BRA__78__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))) 
+              << 0x0000000eU));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1235[3U] 
+        = (0x00003fffU & (((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__109__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                               << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__108__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                         << 2U)) | 
+                             (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__107__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                               << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__106__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                            << 0x0000000aU) | (((0U 
+                                                 != vlSelfRef.__PVT__g_in_mux_outer__BRA__105__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                << 9U) 
+                                               | (((0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__104__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 8U) 
+                                                  | ((0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__103__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                     << 7U)))) 
+                          | ((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__102__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                 << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__101__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                           << 2U)) 
+                               | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__100__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                   << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__99__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                              << 3U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__98__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                         << 2U) | (
+                                                   ((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__97__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 1U) 
+                                                   | (0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__96__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1236[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1235[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1236[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1235[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1236[2U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1235[2U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1236[3U] 
+        = ((0x001fc000U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1236[3U]) 
+           | (0x001fffffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1235[3U]));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1236[3U] 
+        = ((0x00003fffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1236[3U]) 
+           | (0x001fc000U & ((((((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__116__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                         & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                 << 3U) | ((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__115__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                   & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                           << 2U)) 
+                               | (((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__114__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                   << 1U) | (0U != 
+                                             (vlSelfRef.__PVT__g_in_mux_outer__BRA__113__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                              & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])))) 
+                              << 0x00000011U) | (((0U 
+                                                   != 
+                                                   (vlSelfRef.__PVT__g_in_mux_outer__BRA__112__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                    & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                                  << 0x00000010U) 
+                                                 | (((0U 
+                                                      != 
+                                                      (vlSelfRef.__PVT__g_in_mux_outer__BRA__111__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                       & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                                     << 0x0000000fU) 
+                                                    | ((0U 
+                                                        != 
+                                                        (vlSelfRef.__PVT__g_in_mux_outer__BRA__110__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                         & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                                       << 0x0000000eU))))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1237[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1236[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1237[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1236[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1237[2U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1236[2U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1237[3U] 
+        = ((0xffe00000U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1237[3U]) 
+           | vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1236[3U]);
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1237[3U] 
+        = ((0x001fffffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1237[3U]) 
+           | (0xffe00000U & ((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__127__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                 << 5U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__126__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                            << 4U) 
+                                           | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__125__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                              << 3U))) 
+                               | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__124__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                   << 2U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__123__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                              << 1U) 
+                                             | (0U 
+                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__122__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o)))) 
+                              << 0x0000001aU) | (((
+                                                   ((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__121__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 4U) 
+                                                   | (((0U 
+                                                        != vlSelfRef.__PVT__g_in_mux_outer__BRA__120__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                       << 3U) 
+                                                      | ((0U 
+                                                          != vlSelfRef.__PVT__g_in_mux_outer__BRA__119__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                         << 2U))) 
+                                                  | (((0U 
+                                                       != vlSelfRef.__PVT__g_in_mux_outer__BRA__118__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                      << 1U) 
+                                                     | (0U 
+                                                        != vlSelfRef.__PVT__g_in_mux_outer__BRA__117__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                 << 0x00000015U))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1237[4U] 
+        = (0x001fffffU & (((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__148__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                               << 5U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__147__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                          << 4U) | 
+                                         ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__146__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                          << 3U))) 
+                             | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__145__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                 << 2U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__144__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                            << 1U) 
+                                           | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__143__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o)))) 
+                            << 0x0000000fU) | (((((0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__142__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                  << 4U) 
+                                                 | (((0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__141__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                     << 3U) 
+                                                    | ((0U 
+                                                        != vlSelfRef.__PVT__g_in_mux_outer__BRA__140__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                       << 2U))) 
+                                                | (((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__139__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 1U) 
+                                                   | (0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__138__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                               << 0x0000000aU)) 
+                          | ((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__137__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                 << 4U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__136__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                            << 3U) 
+                                           | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__135__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                              << 2U))) 
+                               | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__134__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                   << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__133__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                              << 5U) | ((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__132__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                          << 4U) | 
+                                         (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__131__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                           << 3U) | 
+                                          ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__130__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                           << 2U))) 
+                                        | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__129__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                            << 1U) 
+                                           | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__128__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1238[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1237[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1238[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1237[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1238[2U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1237[2U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1238[3U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1237[3U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1238[4U] 
+        = ((0x0fe00000U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1238[4U]) 
+           | (0x0fffffffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1237[4U]));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1238[4U] 
+        = ((0x001fffffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1238[4U]) 
+           | (0x0fe00000U & ((((((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__155__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                         & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                 << 3U) | ((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__154__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                   & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                           << 2U)) 
+                               | (((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__153__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                   << 1U) | (0U != 
+                                             (vlSelfRef.__PVT__g_in_mux_outer__BRA__152__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                              & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])))) 
+                              << 0x00000018U) | (((0U 
+                                                   != 
+                                                   (vlSelfRef.__PVT__g_in_mux_outer__BRA__151__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                    & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                                  << 0x00000017U) 
+                                                 | (((0U 
+                                                      != 
+                                                      (vlSelfRef.__PVT__g_in_mux_outer__BRA__150__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                       & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                                     << 0x00000016U) 
+                                                    | ((0U 
+                                                        != 
+                                                        (vlSelfRef.__PVT__g_in_mux_outer__BRA__149__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                         & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                                       << 0x00000015U))))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1239[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1238[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1239[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1238[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1239[2U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1238[2U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1239[3U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1238[3U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1239[4U] 
+        = ((0xf0000000U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1239[4U]) 
+           | vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1238[4U]);
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1239[4U] 
+        = ((0x0fffffffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1239[4U]) 
+           | (((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__159__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                 << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__158__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                           << 2U)) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__157__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                       << 1U) | (0U 
+                                                 != vlSelfRef.__PVT__g_in_mux_outer__BRA__156__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+              << 0x0000001cU));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1239[5U] 
+        = (0x0fffffffU & (((((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__187__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                 << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__186__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                           << 2U)) 
+                               | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__185__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                   << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__184__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                              << 0x0000000aU) | (((0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__183__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                  << 9U) 
+                                                 | (((0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__182__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                     << 8U) 
+                                                    | ((0U 
+                                                        != vlSelfRef.__PVT__g_in_mux_outer__BRA__181__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                       << 7U)))) 
+                            | ((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__180__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                   << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__179__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                             << 2U)) 
+                                 | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__178__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                     << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__177__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                << 3U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__176__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                           << 2U) | 
+                                          (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__175__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                            << 1U) 
+                                           | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__174__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))) 
+                           << 0x0000000eU) | ((((((
+                                                   (0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__173__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 3U) 
+                                                  | ((0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__172__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                     << 2U)) 
+                                                 | (((0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__171__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                     << 1U) 
+                                                    | (0U 
+                                                       != vlSelfRef.__PVT__g_in_mux_outer__BRA__170__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                << 0x0000000aU) 
+                                               | (((0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__169__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 9U) 
+                                                  | (((0U 
+                                                       != vlSelfRef.__PVT__g_in_mux_outer__BRA__168__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                      << 8U) 
+                                                     | ((0U 
+                                                         != vlSelfRef.__PVT__g_in_mux_outer__BRA__167__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                        << 7U)))) 
+                                              | ((((((0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__166__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                     << 3U) 
+                                                    | ((0U 
+                                                        != vlSelfRef.__PVT__g_in_mux_outer__BRA__165__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                       << 2U)) 
+                                                   | (((0U 
+                                                        != vlSelfRef.__PVT__g_in_mux_outer__BRA__164__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                       << 1U) 
+                                                      | (0U 
+                                                         != vlSelfRef.__PVT__g_in_mux_outer__BRA__163__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                  << 3U) 
+                                                 | (((0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__162__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                     << 2U) 
+                                                    | (((0U 
+                                                         != vlSelfRef.__PVT__g_in_mux_outer__BRA__161__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                        << 1U) 
+                                                       | (0U 
+                                                          != vlSelfRef.__PVT__g_in_mux_outer__BRA__160__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o)))))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1240[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1239[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1240[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1239[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1240[2U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1239[2U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1240[3U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1239[3U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1240[4U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1239[4U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1240[5U] 
+        = ((0xf0000000U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1240[5U]) 
+           | vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1239[5U]);
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1240[5U] 
+        = ((0x0fffffffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1240[5U]) 
+           | (((((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__191__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                         & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                 << 3U) | ((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__190__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                   & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                           << 2U)) | (((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__189__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                               & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                       << 1U) | (0U 
+                                                 != 
+                                                 (vlSelfRef.__PVT__g_in_mux_outer__BRA__188__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                  & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])))) 
+              << 0x0000001cU));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1240[6U] 
+        = (7U & (((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__194__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                          & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                  << 2U) | (((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__193__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                     & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                             << 1U) | (0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__192__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                              & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1241[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1240[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1241[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1240[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1241[2U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1240[2U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1241[3U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1240[3U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1241[4U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1240[4U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1241[5U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1240[5U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1241[6U] 
+        = ((0xfffffff8U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1241[6U]) 
+           | vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1240[6U]);
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1241[6U] 
+        = ((7U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1241[6U]) 
+           | (0xfffffff8U & (((((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__223__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                    << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__222__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                              << 2U)) 
+                                  | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__221__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                      << 1U) | (0U 
+                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__220__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                 << 0x0000000bU) | 
+                                (((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__219__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                    << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__218__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                              << 2U)) 
+                                  | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__217__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                      << 1U) | (0U 
+                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__216__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                 << 7U)) | ((((((0U 
+                                                 != vlSelfRef.__PVT__g_in_mux_outer__BRA__215__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                << 3U) 
+                                               | ((0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__214__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                  << 2U)) 
+                                              | (((0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__213__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                  << 1U) 
+                                                 | (0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__212__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                             << 3U) 
+                                            | (((0U 
+                                                 != vlSelfRef.__PVT__g_in_mux_outer__BRA__211__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                << 2U) 
+                                               | (((0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__210__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 1U) 
+                                                  | (0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__209__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))) 
+                              << 0x00000011U) | (((
+                                                   (((((0U 
+                                                        != vlSelfRef.__PVT__g_in_mux_outer__BRA__208__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                       << 3U) 
+                                                      | ((0U 
+                                                          != vlSelfRef.__PVT__g_in_mux_outer__BRA__207__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                         << 2U)) 
+                                                     | (((0U 
+                                                          != vlSelfRef.__PVT__g_in_mux_outer__BRA__206__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                         << 1U) 
+                                                        | (0U 
+                                                           != vlSelfRef.__PVT__g_in_mux_outer__BRA__205__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                    << 0x0000000aU) 
+                                                   | (((0U 
+                                                        != vlSelfRef.__PVT__g_in_mux_outer__BRA__204__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                       << 9U) 
+                                                      | (((0U 
+                                                           != vlSelfRef.__PVT__g_in_mux_outer__BRA__203__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                          << 8U) 
+                                                         | ((0U 
+                                                             != vlSelfRef.__PVT__g_in_mux_outer__BRA__202__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                            << 7U)))) 
+                                                  | ((((((0U 
+                                                          != vlSelfRef.__PVT__g_in_mux_outer__BRA__201__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                         << 3U) 
+                                                        | ((0U 
+                                                            != vlSelfRef.__PVT__g_in_mux_outer__BRA__200__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                           << 2U)) 
+                                                       | (((0U 
+                                                            != vlSelfRef.__PVT__g_in_mux_outer__BRA__199__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                           << 1U) 
+                                                          | (0U 
+                                                             != vlSelfRef.__PVT__g_in_mux_outer__BRA__198__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                      << 3U) 
+                                                     | (((0U 
+                                                          != vlSelfRef.__PVT__g_in_mux_outer__BRA__197__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                         << 2U) 
+                                                        | (((0U 
+                                                             != vlSelfRef.__PVT__g_in_mux_outer__BRA__196__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                            << 1U) 
+                                                           | (0U 
+                                                              != vlSelfRef.__PVT__g_in_mux_outer__BRA__195__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))) 
+                                                 << 3U))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1241[7U] 
+        = (7U & (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__226__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                  << 2U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__225__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                             << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__224__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1242[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1241[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1242[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1241[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1242[2U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1241[2U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1242[3U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1241[3U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1242[4U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1241[4U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1242[5U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1241[5U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1242[6U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1241[6U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1242[7U] 
+        = ((0x000003f8U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1242[7U]) 
+           | (0x000003ffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1241[7U]));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1242[7U] 
+        = ((7U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1242[7U]) 
+           | (0x000003f8U & ((((((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__233__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                         & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                 << 3U) | ((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__232__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                   & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                           << 2U)) 
+                               | (((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__231__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                   << 1U) | (0U != 
+                                             (vlSelfRef.__PVT__g_in_mux_outer__BRA__230__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                              & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])))) 
+                              << 6U) | (((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__229__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                 & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                         << 5U) | (
+                                                   ((0U 
+                                                     != 
+                                                     (vlSelfRef.__PVT__g_in_mux_outer__BRA__228__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                      & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                                    << 4U) 
+                                                   | ((0U 
+                                                       != 
+                                                       (vlSelfRef.__PVT__g_in_mux_outer__BRA__227__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                        & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                                      << 3U))))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1243[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1242[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1243[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1242[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1243[2U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1242[2U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1243[3U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1242[3U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1243[4U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1242[4U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1243[5U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1242[5U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1243[6U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1242[6U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1243[7U] 
+        = ((0xfffffc00U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1243[7U]) 
+           | vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1242[7U]);
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1243[7U] 
+        = ((0x000003ffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1243[7U]) 
+           | ((((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__255__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                    << 5U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__254__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                               << 4U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__253__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                         << 3U))) | 
+                  (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__252__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                    << 2U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__251__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                               << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__250__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o)))) 
+                 << 0x00000010U) | (((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__249__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                       << 4U) | (((0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__248__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                  << 3U) 
+                                                 | ((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__247__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 2U))) 
+                                     | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__246__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                         << 1U) | (0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__245__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                    << 0x0000000bU)) 
+               | ((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__244__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                      << 5U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__243__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                 << 4U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__242__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                           << 3U))) 
+                    | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__241__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                        << 2U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__240__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                   << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__239__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o)))) 
+                   << 5U) | ((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__238__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                               << 4U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__237__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                          << 3U) | 
+                                         ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__236__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                          << 2U))) 
+                             | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__235__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                 << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__234__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))) 
+              << 0x0000000aU));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1243[8U] 
+        = (0x000003ffU & ((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__265__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                              << 4U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__264__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                         << 3U) | (
+                                                   (0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__263__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 2U))) 
+                            | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__262__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__261__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                           << 5U) | ((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__260__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                       << 4U) | (((0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__259__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                  << 3U) 
+                                                 | ((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__258__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 2U))) 
+                                     | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__257__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                         << 1U) | (0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__256__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o)))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1244[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1243[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1244[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1243[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1244[2U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1243[2U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1244[3U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1243[3U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1244[4U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1243[4U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1244[5U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1243[5U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1244[6U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1243[6U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1244[7U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1243[7U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1244[8U] 
+        = ((0x0001fc00U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1244[8U]) 
+           | (0x0001ffffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1243[8U]));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1244[8U] 
+        = ((0x000003ffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1244[8U]) 
+           | (0x0001fc00U & ((((((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__272__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                         & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                 << 3U) | ((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__271__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                   & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                           << 2U)) 
+                               | (((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__270__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                   << 1U) | (0U != 
+                                             (vlSelfRef.__PVT__g_in_mux_outer__BRA__269__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                              & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])))) 
+                              << 0x0000000dU) | (((0U 
+                                                   != 
+                                                   (vlSelfRef.__PVT__g_in_mux_outer__BRA__268__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                    & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                                  << 0x0000000cU) 
+                                                 | (((0U 
+                                                      != 
+                                                      (vlSelfRef.__PVT__g_in_mux_outer__BRA__267__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                       & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                                     << 0x0000000bU) 
+                                                    | ((0U 
+                                                        != 
+                                                        (vlSelfRef.__PVT__g_in_mux_outer__BRA__266__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                         & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                                       << 0x0000000aU))))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1244[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1244[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[2U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1244[2U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[3U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1244[3U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[4U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1244[4U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[5U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1244[5U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[6U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1244[6U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[7U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1244[7U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[8U] 
+        = ((0xfffe0000U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[8U]) 
+           | vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1244[8U]);
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[8U] 
+        = ((0x0001ffffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[8U]) 
+           | ((((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__287__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                    << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__286__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                              << 2U)) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__285__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                          << 1U) | 
+                                         (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__284__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                 << 0x0000000bU) | (((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__283__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                       << 3U) | ((0U 
+                                                  != vlSelfRef.__PVT__g_in_mux_outer__BRA__282__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                 << 2U)) 
+                                     | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__281__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                         << 1U) | (0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__280__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                    << 7U)) | (((((
+                                                   (0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__279__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 3U) 
+                                                  | ((0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__278__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                     << 2U)) 
+                                                 | (((0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__277__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                     << 1U) 
+                                                    | (0U 
+                                                       != vlSelfRef.__PVT__g_in_mux_outer__BRA__276__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                << 3U) 
+                                               | (((0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__275__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 2U) 
+                                                  | (((0U 
+                                                       != vlSelfRef.__PVT__g_in_mux_outer__BRA__274__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                      << 1U) 
+                                                     | (0U 
+                                                        != vlSelfRef.__PVT__g_in_mux_outer__BRA__273__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))) 
+              << 0x00000011U));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[9U] 
+        = (0x0001ffffU & (((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__304__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                               << 4U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__303__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                          << 3U) | 
+                                         ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__302__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                          << 2U))) 
+                             | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__301__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                 << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__300__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                            << 0x0000000cU) | (((((0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__299__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                  << 3U) 
+                                                 | ((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__298__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 2U)) 
+                                                | (((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__297__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 1U) 
+                                                   | (0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__296__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                               << 8U)) 
+                          | ((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__295__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                 << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__294__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                           << 2U)) 
+                               | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__293__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                   << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__292__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                              << 4U) | ((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__291__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                          << 3U) | 
+                                         ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__290__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                          << 2U)) | 
+                                        (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__289__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                          << 1U) | 
+                                         (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__288__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))));
+    vlSelfRef.out_o[0U] = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[0U];
+    vlSelfRef.out_o[1U] = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[1U];
+    vlSelfRef.out_o[2U] = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[2U];
+    vlSelfRef.out_o[3U] = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[3U];
+    vlSelfRef.out_o[4U] = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[4U];
+    vlSelfRef.out_o[5U] = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[5U];
+    vlSelfRef.out_o[6U] = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[6U];
+    vlSelfRef.out_o[7U] = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[7U];
+    vlSelfRef.out_o[8U] = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[8U];
+    vlSelfRef.out_o[9U] = ((0x00fe0000U & vlSelfRef.out_o[9U]) 
+                           | (0x00ffffffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1245[9U]));
+    vlSelfRef.out_o[9U] = ((0x0001ffffU & vlSelfRef.out_o[9U]) 
+                           | (0x00fe0000U & ((((((0U 
+                                                  != 
+                                                  (vlSelfRef.__PVT__g_in_mux_outer__BRA__311__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                   & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                                 << 3U) 
+                                                | ((0U 
+                                                    != 
+                                                    (vlSelfRef.__PVT__g_in_mux_outer__BRA__310__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                     & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                                   << 2U)) 
+                                               | (((0U 
+                                                    != 
+                                                    (vlSelfRef.__PVT__g_in_mux_outer__BRA__309__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                     & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                                   << 1U) 
+                                                  | (0U 
+                                                     != 
+                                                     (vlSelfRef.__PVT__g_in_mux_outer__BRA__308__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                      & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])))) 
+                                              << 0x00000014U) 
+                                             | (((0U 
+                                                  != 
+                                                  (vlSelfRef.__PVT__g_in_mux_outer__BRA__307__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                   & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                                 << 0x00000013U) 
+                                                | (((0U 
+                                                     != 
+                                                     (vlSelfRef.__PVT__g_in_mux_outer__BRA__306__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                      & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                                    << 0x00000012U) 
+                                                   | ((0U 
+                                                       != 
+                                                       (vlSelfRef.__PVT__g_in_mux_outer__BRA__305__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                        & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[2U])) 
+                                                      << 0x00000011U))))));
+}
+
+void Vsim_prim_onehot_mux__W138_I20___nba_comb__TOP__chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_rf_bignum__DOT__gen_rf_bignum_ff__DOT__u_otbn_rf_bignum_inner__DOT__u_rd_mux_b__0(Vsim_prim_onehot_mux__W138_I20* vlSelf) {
+    VL_DEBUG_IF(VL_DBG_MSGF("+                    Vsim_prim_onehot_mux__W138_I20___nba_comb__TOP__chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_rf_bignum__DOT__gen_rf_bignum_ff__DOT__u_otbn_rf_bignum_inner__DOT__u_rd_mux_b__0\n"); );
+    Vsim__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    auto& vlSelfRef = std::ref(*vlSelf).get();
+    // Body
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__273__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__273__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__274__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__274__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__275__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__275__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__276__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__276__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__277__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__277__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__278__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__278__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__279__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__279__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__280__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__280__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__281__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__281__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__282__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__282__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__283__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__283__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__284__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__284__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__285__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__285__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__286__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__286__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__287__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__287__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__288__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__288__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__289__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__289__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__290__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__290__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__291__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__291__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__292__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__292__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__293__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__293__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__294__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__294__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__295__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__295__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__296__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__296__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__297__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__297__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__298__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__298__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__299__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__299__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__300__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__300__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__301__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__301__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__302__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__302__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__303__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__303__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__304__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__304__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__234__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__234__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__235__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__235__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__236__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__236__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__237__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__237__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__238__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__238__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__239__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__239__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__240__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__240__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__241__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__241__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__242__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__242__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__243__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__243__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__244__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__244__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__245__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__245__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__246__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__246__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__247__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__247__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__248__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__248__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__249__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__249__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__250__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__250__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__251__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__251__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__252__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__252__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__253__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__253__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__254__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__254__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__255__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__255__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__256__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__256__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__257__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__257__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__258__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__258__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__259__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__259__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__260__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__260__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__261__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__261__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__262__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__262__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__263__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__263__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__264__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__264__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__265__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__265__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__195__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__195__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__196__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__196__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__197__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__197__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__198__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__198__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__199__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__199__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__200__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__200__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__201__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__201__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__202__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__202__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__203__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__203__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__204__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__204__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__205__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__205__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__206__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__206__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__207__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__207__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__208__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__208__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__209__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__209__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__210__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__210__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__211__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__211__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__212__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__212__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__213__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__213__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__214__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__214__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__215__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__215__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__216__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__216__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__217__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__217__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__218__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__218__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__219__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__219__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__220__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__220__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__221__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__221__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__222__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__222__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__223__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__223__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__224__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__224__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__225__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__225__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__226__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__226__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__156__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__156__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__157__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__157__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__158__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__158__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__159__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__159__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__160__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__160__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__161__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__161__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__162__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__162__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__163__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__163__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__164__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__164__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__165__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__165__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__166__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__166__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__167__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__167__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__168__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__168__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__169__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__169__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__170__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__170__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__171__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__171__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__172__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__172__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__173__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__173__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__174__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__174__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__175__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__175__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__176__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__176__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__177__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__177__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__178__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__178__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__179__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__179__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__180__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__180__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__181__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__181__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__182__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__182__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__183__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__183__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__184__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__184__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__185__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__185__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__186__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__186__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__187__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__187__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__117__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__117__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__118__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__118__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__119__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__119__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__120__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__120__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__121__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__121__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__122__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__122__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__123__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__123__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__124__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__124__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__125__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__125__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__126__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__126__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__127__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__127__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__128__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__128__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__129__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__129__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__130__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__130__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__131__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__131__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__132__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__132__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__133__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__133__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__134__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__134__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__135__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__135__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__136__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__136__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__137__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__137__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__138__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__138__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__139__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__139__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__140__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__140__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__141__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__141__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__142__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__142__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__143__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__143__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__144__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__144__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__145__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__145__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__146__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__146__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__147__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__147__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__148__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__148__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__78__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__78__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__79__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__79__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__80__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__80__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__81__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__81__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__82__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__82__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__83__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__83__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__84__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__84__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__85__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__85__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__86__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__86__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__87__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__87__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__88__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__88__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__89__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__89__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__90__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__90__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__91__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__91__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__92__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__92__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__93__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__93__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__94__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__94__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__95__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__95__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__96__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__96__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__97__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__97__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__98__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__98__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__99__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__99__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__100__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__100__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__101__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__101__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__102__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__102__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__103__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__103__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__104__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__104__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__105__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__105__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__106__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__106__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__107__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__107__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__108__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__108__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__109__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__109__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__39__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__39__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__40__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__40__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__41__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__41__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__42__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__42__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__43__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__43__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__44__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__44__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__45__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__45__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__46__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__46__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__47__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__47__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__48__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__48__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__49__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__49__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__50__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__50__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__51__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__51__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__52__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__52__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__53__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__53__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__54__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__54__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__55__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__55__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__56__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__56__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__57__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__57__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__58__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__58__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__59__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__59__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__60__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__60__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__61__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__61__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__62__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__62__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__63__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__63__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__64__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__64__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__65__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__65__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__66__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__66__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__67__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__67__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__68__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__68__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__69__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__69__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__70__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__70__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__32__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__32__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__33__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__33__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__34__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__34__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__35__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__35__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__36__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__36__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__37__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__37__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__38__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__38__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__2__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__2__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__3__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__3__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__4__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__4__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__5__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__5__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__6__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__6__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__7__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__7__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__8__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__8__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__9__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__9__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__10__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__10__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__11__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__11__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__12__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__12__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__13__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__13__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__14__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__14__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__15__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__15__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__16__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__16__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__17__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__17__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__18__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__18__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__19__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__19__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__20__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__20__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__21__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__21__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__22__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__22__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__23__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__23__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__24__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__24__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__25__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__25__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__26__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__26__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__27__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__27__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__28__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__28__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__29__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__29__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__30__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__30__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__31__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__31__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__0__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__0__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__PVT__g_in_mux_outer__BRA__1__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o 
+        = (vlSelfRef.__PVT__g_in_mux_outer__BRA__1__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U]);
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1246 = (
+                                                   ((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__1__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 1U) 
+                                                   | (0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__0__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1247 = (
+                                                   ((((((((0U 
+                                                           != vlSelfRef.__PVT__g_in_mux_outer__BRA__31__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                          << 3U) 
+                                                         | ((0U 
+                                                             != vlSelfRef.__PVT__g_in_mux_outer__BRA__30__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                            << 2U)) 
+                                                        | (((0U 
+                                                             != vlSelfRef.__PVT__g_in_mux_outer__BRA__29__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                            << 1U) 
+                                                           | (0U 
+                                                              != vlSelfRef.__PVT__g_in_mux_outer__BRA__28__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                       << 0x0000000cU) 
+                                                      | (((((0U 
+                                                             != vlSelfRef.__PVT__g_in_mux_outer__BRA__27__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                            << 3U) 
+                                                           | ((0U 
+                                                               != vlSelfRef.__PVT__g_in_mux_outer__BRA__26__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                              << 2U)) 
+                                                          | (((0U 
+                                                               != vlSelfRef.__PVT__g_in_mux_outer__BRA__25__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                              << 1U) 
+                                                             | (0U 
+                                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__24__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                         << 8U)) 
+                                                     | ((((((0U 
+                                                             != vlSelfRef.__PVT__g_in_mux_outer__BRA__23__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                            << 3U) 
+                                                           | ((0U 
+                                                               != vlSelfRef.__PVT__g_in_mux_outer__BRA__22__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                              << 2U)) 
+                                                          | (((0U 
+                                                               != vlSelfRef.__PVT__g_in_mux_outer__BRA__21__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                              << 1U) 
+                                                             | (0U 
+                                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__20__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                         << 4U) 
+                                                        | ((((0U 
+                                                              != vlSelfRef.__PVT__g_in_mux_outer__BRA__19__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                             << 3U) 
+                                                            | ((0U 
+                                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__18__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                               << 2U)) 
+                                                           | (((0U 
+                                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__17__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                               << 1U) 
+                                                              | (0U 
+                                                                 != vlSelfRef.__PVT__g_in_mux_outer__BRA__16__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))) 
+                                                    << 0x00000010U) 
+                                                   | (((((((0U 
+                                                            != vlSelfRef.__PVT__g_in_mux_outer__BRA__15__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                           << 3U) 
+                                                          | ((0U 
+                                                              != vlSelfRef.__PVT__g_in_mux_outer__BRA__14__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                             << 2U)) 
+                                                         | (((0U 
+                                                              != vlSelfRef.__PVT__g_in_mux_outer__BRA__13__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                             << 1U) 
+                                                            | (0U 
+                                                               != vlSelfRef.__PVT__g_in_mux_outer__BRA__12__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                        << 0x0000000cU) 
+                                                       | (((((0U 
+                                                              != vlSelfRef.__PVT__g_in_mux_outer__BRA__11__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                             << 3U) 
+                                                            | ((0U 
+                                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__10__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                               << 2U)) 
+                                                           | (((0U 
+                                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__9__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                               << 1U) 
+                                                              | (0U 
+                                                                 != vlSelfRef.__PVT__g_in_mux_outer__BRA__8__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                          << 8U)) 
+                                                      | ((((((0U 
+                                                              != vlSelfRef.__PVT__g_in_mux_outer__BRA__7__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                             << 3U) 
+                                                            | ((0U 
+                                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__6__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                               << 2U)) 
+                                                           | (((0U 
+                                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__5__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                               << 1U) 
+                                                              | (0U 
+                                                                 != vlSelfRef.__PVT__g_in_mux_outer__BRA__4__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                          << 4U) 
+                                                         | (((0U 
+                                                              != vlSelfRef.__PVT__g_in_mux_outer__BRA__3__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                             << 3U) 
+                                                            | (((0U 
+                                                                 != vlSelfRef.__PVT__g_in_mux_outer__BRA__2__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                                << 2U) 
+                                                               | (IData)(vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1246))))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1248[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1247;
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1248[1U] 
+        = (((((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__63__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                  << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__62__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                            << 2U)) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__61__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                        << 1U) | (0U 
+                                                  != vlSelfRef.__PVT__g_in_mux_outer__BRA__60__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+               << 0x0000000cU) | (((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__59__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                     << 3U) | ((0U 
+                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__58__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                               << 2U)) 
+                                   | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__57__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                       << 1U) | (0U 
+                                                 != vlSelfRef.__PVT__g_in_mux_outer__BRA__56__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                  << 8U)) | ((((((0U 
+                                                  != vlSelfRef.__PVT__g_in_mux_outer__BRA__55__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                 << 3U) 
+                                                | ((0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__54__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 2U)) 
+                                               | (((0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__53__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 1U) 
+                                                  | (0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__52__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                              << 4U) 
+                                             | ((((0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__51__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                  << 3U) 
+                                                 | ((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__50__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 2U)) 
+                                                | (((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__49__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 1U) 
+                                                   | (0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__48__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))) 
+            << 0x00000010U) | (((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__47__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                    << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__46__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                              << 2U)) 
+                                  | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__45__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                      << 1U) | (0U 
+                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__44__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                 << 0x0000000cU) | 
+                                (((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__43__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                    << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__42__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                              << 2U)) 
+                                  | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__41__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                      << 1U) | (0U 
+                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__40__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                 << 8U)) | ((((((0U 
+                                                 != vlSelfRef.__PVT__g_in_mux_outer__BRA__39__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                << 3U) 
+                                               | ((0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__38__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                  << 2U)) 
+                                              | (((0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__37__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                  << 1U) 
+                                                 | (0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__36__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                             << 4U) 
+                                            | ((((0U 
+                                                  != vlSelfRef.__PVT__g_in_mux_outer__BRA__35__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                 << 3U) 
+                                                | ((0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__34__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 2U)) 
+                                               | (((0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__33__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 1U) 
+                                                  | (0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__32__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1248[2U] 
+        = (0x0000007fU & ((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__70__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                              << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__69__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                        << 2U)) | (
+                                                   ((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__68__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 1U) 
+                                                   | (0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__67__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                           << 3U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__66__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                      << 2U) | (((0U 
+                                                  != vlSelfRef.__PVT__g_in_mux_outer__BRA__65__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                 << 1U) 
+                                                | (0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__64__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o)))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1249[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1248[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1249[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1248[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1249[2U] 
+        = ((0x00003f80U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1249[2U]) 
+           | (0x00003fffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1248[2U]));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1249[2U] 
+        = ((0x0000007fU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1249[2U]) 
+           | (0x00003f80U & ((((((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__77__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                         & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                 << 3U) | ((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__76__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                   & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                           << 2U)) 
+                               | (((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__75__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                   << 1U) | (0U != 
+                                             (vlSelfRef.__PVT__g_in_mux_outer__BRA__74__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                              & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])))) 
+                              << 0x0000000aU) | (((0U 
+                                                   != 
+                                                   (vlSelfRef.__PVT__g_in_mux_outer__BRA__73__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                    & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                                  << 9U) 
+                                                 | (((0U 
+                                                      != 
+                                                      (vlSelfRef.__PVT__g_in_mux_outer__BRA__72__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                       & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                                     << 8U) 
+                                                    | ((0U 
+                                                        != 
+                                                        (vlSelfRef.__PVT__g_in_mux_outer__BRA__71__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                         & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                                       << 7U))))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1250[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1249[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1250[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1249[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1250[2U] 
+        = ((0xffffc000U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1250[2U]) 
+           | vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1249[2U]);
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1250[2U] 
+        = ((0x00003fffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1250[2U]) 
+           | ((((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__95__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                    << 4U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__94__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                               << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__93__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                         << 2U))) | 
+                  (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__92__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                    << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__91__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                 << 0x0000000dU) | (((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__90__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                       << 3U) | ((0U 
+                                                  != vlSelfRef.__PVT__g_in_mux_outer__BRA__89__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                 << 2U)) 
+                                     | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__88__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                         << 1U) | (0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__87__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                    << 9U)) | (((((
+                                                   (0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__86__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 4U) 
+                                                  | (((0U 
+                                                       != vlSelfRef.__PVT__g_in_mux_outer__BRA__85__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                      << 3U) 
+                                                     | ((0U 
+                                                         != vlSelfRef.__PVT__g_in_mux_outer__BRA__84__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                        << 2U))) 
+                                                 | (((0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__83__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                     << 1U) 
+                                                    | (0U 
+                                                       != vlSelfRef.__PVT__g_in_mux_outer__BRA__82__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                << 4U) 
+                                               | ((((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__81__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 3U) 
+                                                   | ((0U 
+                                                       != vlSelfRef.__PVT__g_in_mux_outer__BRA__80__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                      << 2U)) 
+                                                  | (((0U 
+                                                       != vlSelfRef.__PVT__g_in_mux_outer__BRA__79__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                      << 1U) 
+                                                     | (0U 
+                                                        != vlSelfRef.__PVT__g_in_mux_outer__BRA__78__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))) 
+              << 0x0000000eU));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1250[3U] 
+        = (0x00003fffU & (((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__109__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                               << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__108__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                         << 2U)) | 
+                             (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__107__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                               << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__106__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                            << 0x0000000aU) | (((0U 
+                                                 != vlSelfRef.__PVT__g_in_mux_outer__BRA__105__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                << 9U) 
+                                               | (((0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__104__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 8U) 
+                                                  | ((0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__103__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                     << 7U)))) 
+                          | ((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__102__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                 << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__101__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                           << 2U)) 
+                               | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__100__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                   << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__99__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                              << 3U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__98__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                         << 2U) | (
+                                                   ((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__97__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 1U) 
+                                                   | (0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__96__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1251[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1250[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1251[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1250[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1251[2U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1250[2U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1251[3U] 
+        = ((0x001fc000U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1251[3U]) 
+           | (0x001fffffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1250[3U]));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1251[3U] 
+        = ((0x00003fffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1251[3U]) 
+           | (0x001fc000U & ((((((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__116__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                         & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                 << 3U) | ((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__115__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                   & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                           << 2U)) 
+                               | (((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__114__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                   << 1U) | (0U != 
+                                             (vlSelfRef.__PVT__g_in_mux_outer__BRA__113__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                              & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])))) 
+                              << 0x00000011U) | (((0U 
+                                                   != 
+                                                   (vlSelfRef.__PVT__g_in_mux_outer__BRA__112__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                    & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                                  << 0x00000010U) 
+                                                 | (((0U 
+                                                      != 
+                                                      (vlSelfRef.__PVT__g_in_mux_outer__BRA__111__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                       & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                                     << 0x0000000fU) 
+                                                    | ((0U 
+                                                        != 
+                                                        (vlSelfRef.__PVT__g_in_mux_outer__BRA__110__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                         & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                                       << 0x0000000eU))))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1252[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1251[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1252[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1251[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1252[2U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1251[2U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1252[3U] 
+        = ((0xffe00000U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1252[3U]) 
+           | vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1251[3U]);
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1252[3U] 
+        = ((0x001fffffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1252[3U]) 
+           | (0xffe00000U & ((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__127__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                 << 5U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__126__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                            << 4U) 
+                                           | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__125__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                              << 3U))) 
+                               | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__124__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                   << 2U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__123__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                              << 1U) 
+                                             | (0U 
+                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__122__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o)))) 
+                              << 0x0000001aU) | (((
+                                                   ((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__121__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 4U) 
+                                                   | (((0U 
+                                                        != vlSelfRef.__PVT__g_in_mux_outer__BRA__120__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                       << 3U) 
+                                                      | ((0U 
+                                                          != vlSelfRef.__PVT__g_in_mux_outer__BRA__119__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                         << 2U))) 
+                                                  | (((0U 
+                                                       != vlSelfRef.__PVT__g_in_mux_outer__BRA__118__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                      << 1U) 
+                                                     | (0U 
+                                                        != vlSelfRef.__PVT__g_in_mux_outer__BRA__117__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                 << 0x00000015U))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1252[4U] 
+        = (0x001fffffU & (((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__148__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                               << 5U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__147__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                          << 4U) | 
+                                         ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__146__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                          << 3U))) 
+                             | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__145__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                 << 2U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__144__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                            << 1U) 
+                                           | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__143__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o)))) 
+                            << 0x0000000fU) | (((((0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__142__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                  << 4U) 
+                                                 | (((0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__141__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                     << 3U) 
+                                                    | ((0U 
+                                                        != vlSelfRef.__PVT__g_in_mux_outer__BRA__140__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                       << 2U))) 
+                                                | (((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__139__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 1U) 
+                                                   | (0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__138__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                               << 0x0000000aU)) 
+                          | ((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__137__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                 << 4U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__136__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                            << 3U) 
+                                           | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__135__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                              << 2U))) 
+                               | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__134__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                   << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__133__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                              << 5U) | ((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__132__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                          << 4U) | 
+                                         (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__131__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                           << 3U) | 
+                                          ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__130__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                           << 2U))) 
+                                        | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__129__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                            << 1U) 
+                                           | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__128__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1253[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1252[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1253[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1252[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1253[2U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1252[2U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1253[3U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1252[3U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1253[4U] 
+        = ((0x0fe00000U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1253[4U]) 
+           | (0x0fffffffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1252[4U]));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1253[4U] 
+        = ((0x001fffffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1253[4U]) 
+           | (0x0fe00000U & ((((((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__155__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                         & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                 << 3U) | ((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__154__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                   & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                           << 2U)) 
+                               | (((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__153__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                   << 1U) | (0U != 
+                                             (vlSelfRef.__PVT__g_in_mux_outer__BRA__152__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                              & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])))) 
+                              << 0x00000018U) | (((0U 
+                                                   != 
+                                                   (vlSelfRef.__PVT__g_in_mux_outer__BRA__151__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                    & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                                  << 0x00000017U) 
+                                                 | (((0U 
+                                                      != 
+                                                      (vlSelfRef.__PVT__g_in_mux_outer__BRA__150__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                       & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                                     << 0x00000016U) 
+                                                    | ((0U 
+                                                        != 
+                                                        (vlSelfRef.__PVT__g_in_mux_outer__BRA__149__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                         & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                                       << 0x00000015U))))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1254[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1253[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1254[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1253[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1254[2U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1253[2U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1254[3U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1253[3U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1254[4U] 
+        = ((0xf0000000U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1254[4U]) 
+           | vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1253[4U]);
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1254[4U] 
+        = ((0x0fffffffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1254[4U]) 
+           | (((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__159__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                 << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__158__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                           << 2U)) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__157__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                       << 1U) | (0U 
+                                                 != vlSelfRef.__PVT__g_in_mux_outer__BRA__156__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+              << 0x0000001cU));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1254[5U] 
+        = (0x0fffffffU & (((((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__187__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                 << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__186__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                           << 2U)) 
+                               | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__185__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                   << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__184__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                              << 0x0000000aU) | (((0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__183__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                  << 9U) 
+                                                 | (((0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__182__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                     << 8U) 
+                                                    | ((0U 
+                                                        != vlSelfRef.__PVT__g_in_mux_outer__BRA__181__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                       << 7U)))) 
+                            | ((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__180__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                   << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__179__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                             << 2U)) 
+                                 | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__178__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                     << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__177__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                << 3U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__176__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                           << 2U) | 
+                                          (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__175__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                            << 1U) 
+                                           | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__174__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))) 
+                           << 0x0000000eU) | ((((((
+                                                   (0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__173__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 3U) 
+                                                  | ((0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__172__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                     << 2U)) 
+                                                 | (((0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__171__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                     << 1U) 
+                                                    | (0U 
+                                                       != vlSelfRef.__PVT__g_in_mux_outer__BRA__170__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                << 0x0000000aU) 
+                                               | (((0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__169__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 9U) 
+                                                  | (((0U 
+                                                       != vlSelfRef.__PVT__g_in_mux_outer__BRA__168__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                      << 8U) 
+                                                     | ((0U 
+                                                         != vlSelfRef.__PVT__g_in_mux_outer__BRA__167__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                        << 7U)))) 
+                                              | ((((((0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__166__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                     << 3U) 
+                                                    | ((0U 
+                                                        != vlSelfRef.__PVT__g_in_mux_outer__BRA__165__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                       << 2U)) 
+                                                   | (((0U 
+                                                        != vlSelfRef.__PVT__g_in_mux_outer__BRA__164__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                       << 1U) 
+                                                      | (0U 
+                                                         != vlSelfRef.__PVT__g_in_mux_outer__BRA__163__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                  << 3U) 
+                                                 | (((0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__162__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                     << 2U) 
+                                                    | (((0U 
+                                                         != vlSelfRef.__PVT__g_in_mux_outer__BRA__161__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                        << 1U) 
+                                                       | (0U 
+                                                          != vlSelfRef.__PVT__g_in_mux_outer__BRA__160__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o)))))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1255[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1254[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1255[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1254[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1255[2U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1254[2U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1255[3U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1254[3U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1255[4U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1254[4U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1255[5U] 
+        = ((0xf0000000U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1255[5U]) 
+           | vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1254[5U]);
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1255[5U] 
+        = ((0x0fffffffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1255[5U]) 
+           | (((((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__191__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                         & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                 << 3U) | ((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__190__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                   & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                           << 2U)) | (((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__189__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                               & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                       << 1U) | (0U 
+                                                 != 
+                                                 (vlSelfRef.__PVT__g_in_mux_outer__BRA__188__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                  & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])))) 
+              << 0x0000001cU));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1255[6U] 
+        = (7U & (((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__194__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                          & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                  << 2U) | (((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__193__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                     & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                             << 1U) | (0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__192__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                              & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1256[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1255[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1256[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1255[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1256[2U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1255[2U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1256[3U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1255[3U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1256[4U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1255[4U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1256[5U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1255[5U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1256[6U] 
+        = ((0xfffffff8U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1256[6U]) 
+           | vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1255[6U]);
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1256[6U] 
+        = ((7U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1256[6U]) 
+           | (0xfffffff8U & (((((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__223__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                    << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__222__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                              << 2U)) 
+                                  | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__221__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                      << 1U) | (0U 
+                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__220__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                 << 0x0000000bU) | 
+                                (((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__219__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                    << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__218__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                              << 2U)) 
+                                  | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__217__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                      << 1U) | (0U 
+                                                != vlSelfRef.__PVT__g_in_mux_outer__BRA__216__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                 << 7U)) | ((((((0U 
+                                                 != vlSelfRef.__PVT__g_in_mux_outer__BRA__215__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                << 3U) 
+                                               | ((0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__214__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                  << 2U)) 
+                                              | (((0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__213__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                  << 1U) 
+                                                 | (0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__212__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                             << 3U) 
+                                            | (((0U 
+                                                 != vlSelfRef.__PVT__g_in_mux_outer__BRA__211__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                << 2U) 
+                                               | (((0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__210__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 1U) 
+                                                  | (0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__209__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))) 
+                              << 0x00000011U) | (((
+                                                   (((((0U 
+                                                        != vlSelfRef.__PVT__g_in_mux_outer__BRA__208__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                       << 3U) 
+                                                      | ((0U 
+                                                          != vlSelfRef.__PVT__g_in_mux_outer__BRA__207__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                         << 2U)) 
+                                                     | (((0U 
+                                                          != vlSelfRef.__PVT__g_in_mux_outer__BRA__206__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                         << 1U) 
+                                                        | (0U 
+                                                           != vlSelfRef.__PVT__g_in_mux_outer__BRA__205__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                    << 0x0000000aU) 
+                                                   | (((0U 
+                                                        != vlSelfRef.__PVT__g_in_mux_outer__BRA__204__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                       << 9U) 
+                                                      | (((0U 
+                                                           != vlSelfRef.__PVT__g_in_mux_outer__BRA__203__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                          << 8U) 
+                                                         | ((0U 
+                                                             != vlSelfRef.__PVT__g_in_mux_outer__BRA__202__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                            << 7U)))) 
+                                                  | ((((((0U 
+                                                          != vlSelfRef.__PVT__g_in_mux_outer__BRA__201__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                         << 3U) 
+                                                        | ((0U 
+                                                            != vlSelfRef.__PVT__g_in_mux_outer__BRA__200__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                           << 2U)) 
+                                                       | (((0U 
+                                                            != vlSelfRef.__PVT__g_in_mux_outer__BRA__199__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                           << 1U) 
+                                                          | (0U 
+                                                             != vlSelfRef.__PVT__g_in_mux_outer__BRA__198__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                      << 3U) 
+                                                     | (((0U 
+                                                          != vlSelfRef.__PVT__g_in_mux_outer__BRA__197__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                         << 2U) 
+                                                        | (((0U 
+                                                             != vlSelfRef.__PVT__g_in_mux_outer__BRA__196__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                            << 1U) 
+                                                           | (0U 
+                                                              != vlSelfRef.__PVT__g_in_mux_outer__BRA__195__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))) 
+                                                 << 3U))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1256[7U] 
+        = (7U & (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__226__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                  << 2U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__225__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                             << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__224__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1257[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1256[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1257[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1256[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1257[2U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1256[2U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1257[3U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1256[3U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1257[4U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1256[4U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1257[5U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1256[5U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1257[6U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1256[6U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1257[7U] 
+        = ((0x000003f8U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1257[7U]) 
+           | (0x000003ffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1256[7U]));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1257[7U] 
+        = ((7U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1257[7U]) 
+           | (0x000003f8U & ((((((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__233__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                         & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                 << 3U) | ((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__232__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                   & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                           << 2U)) 
+                               | (((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__231__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                   << 1U) | (0U != 
+                                             (vlSelfRef.__PVT__g_in_mux_outer__BRA__230__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                              & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])))) 
+                              << 6U) | (((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__229__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                 & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                         << 5U) | (
+                                                   ((0U 
+                                                     != 
+                                                     (vlSelfRef.__PVT__g_in_mux_outer__BRA__228__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                      & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                                    << 4U) 
+                                                   | ((0U 
+                                                       != 
+                                                       (vlSelfRef.__PVT__g_in_mux_outer__BRA__227__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                        & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                                      << 3U))))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1258[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1257[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1258[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1257[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1258[2U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1257[2U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1258[3U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1257[3U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1258[4U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1257[4U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1258[5U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1257[5U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1258[6U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1257[6U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1258[7U] 
+        = ((0xfffffc00U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1258[7U]) 
+           | vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1257[7U]);
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1258[7U] 
+        = ((0x000003ffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1258[7U]) 
+           | ((((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__255__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                    << 5U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__254__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                               << 4U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__253__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                         << 3U))) | 
+                  (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__252__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                    << 2U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__251__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                               << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__250__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o)))) 
+                 << 0x00000010U) | (((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__249__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                       << 4U) | (((0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__248__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                  << 3U) 
+                                                 | ((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__247__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 2U))) 
+                                     | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__246__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                         << 1U) | (0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__245__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                    << 0x0000000bU)) 
+               | ((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__244__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                      << 5U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__243__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                 << 4U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__242__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                           << 3U))) 
+                    | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__241__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                        << 2U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__240__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                   << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__239__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o)))) 
+                   << 5U) | ((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__238__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                               << 4U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__237__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                          << 3U) | 
+                                         ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__236__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                          << 2U))) 
+                             | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__235__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                 << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__234__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))) 
+              << 0x0000000aU));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1258[8U] 
+        = (0x000003ffU & ((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__265__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                              << 4U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__264__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                         << 3U) | (
+                                                   (0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__263__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 2U))) 
+                            | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__262__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__261__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                           << 5U) | ((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__260__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                       << 4U) | (((0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__259__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                  << 3U) 
+                                                 | ((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__258__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 2U))) 
+                                     | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__257__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                         << 1U) | (0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__256__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o)))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1259[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1258[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1259[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1258[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1259[2U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1258[2U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1259[3U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1258[3U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1259[4U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1258[4U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1259[5U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1258[5U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1259[6U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1258[6U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1259[7U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1258[7U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1259[8U] 
+        = ((0x0001fc00U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1259[8U]) 
+           | (0x0001ffffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1258[8U]));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1259[8U] 
+        = ((0x000003ffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1259[8U]) 
+           | (0x0001fc00U & ((((((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__272__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                         & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                 << 3U) | ((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__271__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                   & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                           << 2U)) 
+                               | (((0U != (vlSelfRef.__PVT__g_in_mux_outer__BRA__270__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                           & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                   << 1U) | (0U != 
+                                             (vlSelfRef.__PVT__g_in_mux_outer__BRA__269__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                              & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])))) 
+                              << 0x0000000dU) | (((0U 
+                                                   != 
+                                                   (vlSelfRef.__PVT__g_in_mux_outer__BRA__268__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                    & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                                  << 0x0000000cU) 
+                                                 | (((0U 
+                                                      != 
+                                                      (vlSelfRef.__PVT__g_in_mux_outer__BRA__267__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                       & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                                     << 0x0000000bU) 
+                                                    | ((0U 
+                                                        != 
+                                                        (vlSelfRef.__PVT__g_in_mux_outer__BRA__266__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__in0_i 
+                                                         & vlSymsp->TOP.chip_sim_tb__DOT__u_dut__DOT__top_earlgrey__DOT__u_otbn__DOT__u_otbn_core__DOT__u_otbn_instruction_fetch__DOT____Vcellout__u_rf_predec_bignum_flop__q_o[1U])) 
+                                                       << 0x0000000aU))))));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1260[0U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1259[0U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1260[1U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1259[1U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1260[2U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1259[2U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1260[3U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1259[3U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1260[4U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1259[4U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1260[5U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1259[5U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1260[6U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1259[6U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1260[7U] 
+        = vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1259[7U];
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1260[8U] 
+        = ((0xfffe0000U & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1260[8U]) 
+           | vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1259[8U]);
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1260[8U] 
+        = ((0x0001ffffU & vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1260[8U]) 
+           | ((((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__287__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                    << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__286__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                              << 2U)) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__285__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                          << 1U) | 
+                                         (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__284__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                 << 0x0000000bU) | (((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__283__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                       << 3U) | ((0U 
+                                                  != vlSelfRef.__PVT__g_in_mux_outer__BRA__282__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                 << 2U)) 
+                                     | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__281__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                         << 1U) | (0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__280__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                    << 7U)) | (((((
+                                                   (0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__279__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 3U) 
+                                                  | ((0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__278__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                     << 2U)) 
+                                                 | (((0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__277__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                     << 1U) 
+                                                    | (0U 
+                                                       != vlSelfRef.__PVT__g_in_mux_outer__BRA__276__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                                << 3U) 
+                                               | (((0U 
+                                                    != vlSelfRef.__PVT__g_in_mux_outer__BRA__275__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                   << 2U) 
+                                                  | (((0U 
+                                                       != vlSelfRef.__PVT__g_in_mux_outer__BRA__274__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                      << 1U) 
+                                                     | (0U 
+                                                        != vlSelfRef.__PVT__g_in_mux_outer__BRA__273__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))) 
+              << 0x00000011U));
+    vlSelfRef.__VdfgRegularize_h6e95ff9d_0_1260[9U] 
+        = (0x0001ffffU & (((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__304__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                               << 4U) | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__303__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                          << 3U) | 
+                                         ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__302__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                          << 2U))) 
+                             | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__301__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                 << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__300__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                            << 0x0000000cU) | (((((0U 
+                                                   != vlSelfRef.__PVT__g_in_mux_outer__BRA__299__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                  << 3U) 
+                                                 | ((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__298__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 2U)) 
+                                                | (((0U 
+                                                     != vlSelfRef.__PVT__g_in_mux_outer__BRA__297__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                                    << 1U) 
+                                                   | (0U 
+                                                      != vlSelfRef.__PVT__g_in_mux_outer__BRA__296__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                                               << 8U)) 
+                          | ((((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__295__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                 << 3U) | ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__294__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                           << 2U)) 
+                               | (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__293__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                   << 1U) | (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__292__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))) 
+                              << 4U) | ((((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__291__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                          << 3U) | 
+                                         ((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__290__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                          << 2U)) | 
+                                        (((0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__289__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o) 
+                                          << 1U) | 
+                                         (0U != vlSelfRef.__PVT__g_in_mux_outer__BRA__288__KET____DOT__u_mux_bit_and__DOT__gen_generic__DOT__u_impl_generic__DOT__out_o))))));
+}

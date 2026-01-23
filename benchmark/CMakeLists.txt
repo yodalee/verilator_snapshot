@@ -6,6 +6,7 @@ set(BENCHMARKS
   RSA256
   simple
   picorv32
+  OpenTitan_sha
   vortexmini_sgemm)
 
 foreach(f ${BENCHMARKS})
