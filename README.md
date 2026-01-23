@@ -28,6 +28,7 @@ Build the testbench you would like to run
 ```
 make ${benchmark}
 make ${benchmark}_gtkwave
+```
 
 Run the case under their directory, with option to disable/enable fst file dumping.
 ```
@@ -43,15 +44,17 @@ Please refer to the [unofficial document](https://blog.timhutt.co.uk/fst_spec/) 
 
 # Profiling results
 
-We collect following benchmark:
+We collect the following benchmark:
 1. [RSA256](https://github.com/yodalee/rsa256)
 2. [picorv32](https://github.com/YosysHQ/picorv32)
 3. [Vortex:mini:sgemm](https://github.com/vortexgpgpu/vortex) from [rtlmeter](https://github.com/verilator/rtlmeter)
+4. [OpenTitan:default:sha](https://github.com/lowRISC/opentitan) from [rtlmeter](https://github.com/verilator/rtlmeter)
 
 CPU: AMD Ryzen 9 7950X, release mode, cell is the runtime (ms).
 
-| Mode        | RSA256 | picorv32 | vortex:mini:sgemm |
-|:------------|-------:|---------:|------------------:|
-| GtkWave FST |  163.5 |   1287.7 |           44722.4 |
-| This FST    |   73.9 |    825.9 |           35042.3 |
-| No FST      |    7.5 |     78.4 |            7436.3 |
+| Benchmark           | No FST | GtkWave FST | This FST | This FST vs GtkWave FST |
+|:--------------------|-------:|------------:|---------:|------------------------:|
+| RSA256              |     7.5|       163.5 |     73.9 |                   2.21x |
+| picorv32            |    78.4|      1287.7 |    825.9 |                   1.56x |
+| vortex:mini:sgemm   |  7436.3|     44722.4 |  35042.3 |                   1.28x |
+| OpenTitan:sha       | 96603.1|    193932.0 | 173746.4 |                   1.12x |
