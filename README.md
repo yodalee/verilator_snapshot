@@ -52,9 +52,10 @@ We collect the following benchmark:
 
 CPU: AMD Ryzen 9 7950X, release mode, cell is the runtime (ms).
 
-| Benchmark           | No FST | GtkWave FST | This FST | This FST vs GtkWave FST |
-|:--------------------|-------:|------------:|---------:|------------------------:|
-| RSA256              |     7.5|       163.5 |     73.9 |                   2.21x |
-| picorv32            |    78.4|      1287.7 |    825.9 |                   1.56x |
-| vortex:mini:sgemm   |  7436.3|     44722.4 |  35042.3 |                   1.28x |
-| OpenTitan:sha       | 96603.1|    193932.0 | 173746.4 |                   1.12x |
+| Benchmark           | No FST  | GtkWave FST | This FST | This FST vs GtkWave FST |
+|:--------------------|--------:|------------:|---------:|------------------------:|
+| RSA256              |     7.5 |       163.5 |     73.9 |                   2.21x |
+| picorv32            |    78.4 |      1287.7 |    825.9 |                   1.56x |
+| vortex:mini:sgemm   |  7436.3 |     44722.4 |  35042.3 |                   1.28x |
+| OpenTitan:sha       | 96603.1 |    193932.0 | 173746.4 |                   1.12x |
+| NVDLA:gnet          | 46930.4 |    259299.0 | 258489.8 |                   1.00x |
