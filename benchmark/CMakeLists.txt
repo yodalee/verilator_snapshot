@@ -3,11 +3,13 @@ cmake_minimum_required(VERSION 3.10)
 
 # List all benchmarks (hardcoded)
 set(BENCHMARKS
-  RSA256
   simple
+  RSA256
   picorv32
   OpenTitan_sha
-  vortexmini_sgemm)
+  vortexmini_sgemm
+  nvdla_gnet
+)
 
 foreach(f ${BENCHMARKS})
     # Build verilated source code
