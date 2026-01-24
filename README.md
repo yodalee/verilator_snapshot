@@ -50,12 +50,34 @@ We collect the following benchmark:
 3. [Vortex:mini:sgemm](https://github.com/vortexgpgpu/vortex) from [rtlmeter](https://github.com/verilator/rtlmeter)
 4. [OpenTitan:default:sha](https://github.com/lowRISC/opentitan) from [rtlmeter](https://github.com/verilator/rtlmeter)
 
-CPU: AMD Ryzen 9 7950X, release mode, cell is the runtime (ms).
+## Benchmarks
 
-| Benchmark           | No FST  | GtkWave FST | This FST | This FST vs GtkWave FST |
-|:--------------------|--------:|------------:|---------:|------------------------:|
-| RSA256              |     7.5 |       163.5 |     73.9 |                   2.21x |
-| picorv32            |    78.4 |      1287.7 |    825.9 |                   1.56x |
-| vortex:mini:sgemm   |  7436.3 |     44722.4 |  35042.3 |                   1.28x |
-| OpenTitan:sha       | 96603.1 |    193932.0 | 173746.4 |                   1.12x |
-| NVDLA:gnet          | 46930.4 |    259299.0 | 258489.8 |                   1.00x |
+### Hardware 1
+
+* CPU: AMD Ryzen 9 7950X
+* `CMAKE_BUILD_TYPE`: Release mode
+* Commit: `653f0f0` / 20260124
+
+Cell is the runtime (ms).
+
+| Benchmark           |  No FST (A) | GtkWave FST (B) | This FST (C) | Speedup(B-A)/(C-A) |
+|:--------------------|------------:|----------------:|-------------:|-------------------:|
+| picorv32            |        78.4 |          1287.7 |        825.9 |              1.62x |
+| vortex:mini:sgemm   |      7436.3 |         44722.4 |      35042.3 |              1.31x |
+| OpenTitan:sha       |     96603.1 |        193932.0 |     173746.4 |              1.26x |
+| NVDLA:gnet          |     46930.4 |        259299.0 |     258489.8 |              1.00x |
+
+### Hardware 2
+
+* CPU: AMD Ryzen 7 3700X
+* `CMAKE_BUILD_TYPE`: Release mode
+* Commit: `20c4359` / 20260125
+
+Cell is the runtime (ms).
+
+| Benchmark           |  No FST (A) | GtkWave FST (B) | This FST (C) | Speedup (B-A)/(C-A) |
+|:--------------------|------------:|----------------:|-------------:|--------------------:|
+| picorv32            |         138 |            1799 |          794 |               2.53x |
+| vortex:mini:sgemm   |       15245 |           64769 |        51064 |               1.38x |
+| OpenTitan:sha       |      139145 |          273607 |       239187 |               1.34x |
+| NVDLA:gnet          |      132765 |          442881 |       391804 |               1.19x |
