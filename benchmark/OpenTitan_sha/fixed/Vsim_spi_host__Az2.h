@@ -1,0 +1,457 @@
+// Verilated -*- C++ -*-
+// DESCRIPTION: Verilator output: Design internal header
+// See Vsim.h for the primary calling header
+
+#ifndef VERILATED_VSIM_SPI_HOST__AZ2_H_
+#define VERILATED_VSIM_SPI_HOST__AZ2_H_  // guard
+
+#include "verilated.h"
+#include "verilated_timing.h"
+class Vsim_prim_alert_sender__Iz2;
+class Vsim_tlul_cmd_intg_chk;
+class Vsim_tlul_err;
+class Vsim_tlul_socket_1n__pi66;
+
+
+class Vsim__Syms;
+
+class alignas(VL_CACHE_LINE_BYTES) Vsim_spi_host__Az2 final : public VerilatedModule {
+  public:
+    // CELLS
+    Vsim_prim_alert_sender__Iz2* __PVT__gen_alert_tx__BRA__0__KET____DOT__u_prim_alert_sender;
+    Vsim_tlul_cmd_intg_chk* __PVT__u_reg__DOT__u_chk;
+    Vsim_tlul_socket_1n__pi66* __PVT__u_reg__DOT__u_socket;
+    Vsim_tlul_err* __PVT__u_reg__DOT__u_reg_if__DOT__u_err;
+    Vsim_tlul_err* __PVT__u_window__DOT__u_adapter_rx__DOT__tlul_adapter_reg__DOT__u_err;
+    Vsim_tlul_err* __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__u_err;
+
+    // DESIGN SPECIFIC STATE
+    // Anonymous structures to workaround compiler member-count bugs
+    struct {
+        VL_IN8(clk_i,0,0);
+        VL_IN8(rst_ni,0,0);
+        VL_IN8(alert_rx_i,3,0);
+        VL_OUT8(alert_tx_o,1,0);
+        VL_IN8(racl_policies_i,3,0);
+        VL_OUT8(__PVT__racl_error_o,0,0);
+        VL_OUT8(__PVT__racl_error_log_o,2,0);
+        VL_OUT8(cio_sck_o,0,0);
+        VL_OUT8(cio_sck_en_o,0,0);
+        VL_OUT8(cio_csb_o,0,0);
+        VL_OUT8(cio_csb_en_o,0,0);
+        VL_OUT8(cio_sd_o,3,0);
+        VL_OUT8(cio_sd_en_o,3,0);
+        VL_IN8(cio_sd_i,3,0);
+        VL_OUT8(passthrough_o,3,0);
+        VL_OUT8(__PVT__lsio_trigger_o,0,0);
+        VL_OUT8(intr_error_o,0,0);
+        VL_OUT8(intr_spi_event_o,0,0);
+        CData/*3:0*/ __PVT__sd_en_core;
+        CData/*0:0*/ __PVT__test_dir_inval;
+        CData/*0:0*/ __PVT__test_speed_inval;
+        CData/*0:0*/ __PVT__access_valid;
+        CData/*5:0*/ __PVT__event_mask;
+        CData/*0:0*/ __PVT__gen_passthrough_implementation__DOT__passthrough_en;
+        CData/*3:0*/ __PVT__gen_passthrough_implementation__DOT__pt_sd_out;
+        CData/*0:0*/ __PVT__u_reg__DOT__addrmiss;
+        CData/*0:0*/ __PVT__u_reg__DOT__wr_err;
+        CData/*0:0*/ __PVT__u_reg__DOT__err_q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_intr_state_error__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_intr_state_spi_event__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_intr_enable_error__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_intr_enable_spi_event__q;
+        CData/*7:0*/ u_reg__DOT____Vcellout__u_control_rx_watermark__q;
+        CData/*7:0*/ u_reg__DOT____Vcellout__u_control_tx_watermark__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_control_output_en__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_control_sw_rst__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_control_spien__q;
+        CData/*3:0*/ u_reg__DOT____Vcellout__u_configopts_csnidle__q;
+        CData/*3:0*/ u_reg__DOT____Vcellout__u_configopts_csntrail__q;
+        CData/*3:0*/ u_reg__DOT____Vcellout__u_configopts_csnlead__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_configopts_fullcyc__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_configopts_cpha__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_configopts_cpol__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_error_enable_cmdbusy__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_error_enable_overflow__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_error_enable_underflow__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_error_enable_cmdinval__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_error_enable_csidinval__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_error_status_cmdbusy__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_error_status_overflow__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_error_status_underflow__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_error_status_cmdinval__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_error_status_csidinval__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_error_status_accessinval__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_event_enable_rxfull__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_event_enable_txempty__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_event_enable_rxwm__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_event_enable_txwm__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_event_enable_ready__q;
+        CData/*0:0*/ u_reg__DOT____Vcellout__u_event_enable_idle__q;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_prim_reg_we_check__DOT__u_prim_onehot_check__DOT__err_o;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_prim_reg_we_check__DOT__u_prim_onehot_check__DOT__or_tree__BRA__12__KET__;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_prim_reg_we_check__DOT__u_prim_onehot_check__DOT__or_tree__BRA__11__KET__;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_prim_reg_we_check__DOT__u_prim_onehot_check__DOT__or_tree__BRA__10__KET__;
+    };
+    struct {
+        CData/*0:0*/ __PVT__u_reg__DOT__u_prim_reg_we_check__DOT__u_prim_onehot_check__DOT__or_tree__BRA__8__KET__;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_prim_reg_we_check__DOT__u_prim_onehot_check__DOT__or_tree__BRA__7__KET__;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_prim_reg_we_check__DOT__u_prim_onehot_check__DOT__or_tree__BRA__4__KET__;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_prim_reg_we_check__DOT__u_prim_onehot_check__DOT__or_tree__BRA__3__KET__;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_prim_reg_we_check__DOT__u_prim_onehot_check__DOT__or_tree__BRA__2__KET__;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_prim_reg_we_check__DOT__u_prim_onehot_check__DOT__or_tree__BRA__1__KET__;
+        CData/*5:0*/ __PVT__u_reg__DOT__u_rsp_intg_gen__DOT__gen_rsp_intg__DOT__rsp;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_reg_if__DOT__we_o;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_reg_if__DOT__error_i;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_reg_if__DOT__outstanding_q;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_reg_if__DOT__a_ack;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_reg_if__DOT__d_ack;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_reg_if__DOT__error_q;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_reg_if__DOT__err_internal;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_reg_if__DOT__instr_error;
+        CData/*7:0*/ __PVT__u_reg__DOT__u_reg_if__DOT__reqid_q;
+        CData/*1:0*/ __PVT__u_reg__DOT__u_reg_if__DOT__reqsz_q;
+        CData/*2:0*/ __PVT__u_reg__DOT__u_reg_if__DOT__rspop_q;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_reg_if__DOT__rd_req;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_reg_if__DOT__wr_req;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_intr_state_error__DOT__we;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_intr_state_error__DOT__de;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_intr_state_error__DOT__qe;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_intr_state_error__DOT__wr_data;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_intr_state_spi_event__DOT__d;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_intr_enable_error__DOT__we;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_intr_test_error__DOT__we;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_alert_test__DOT__we;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_control_output_en__DOT__we;
+        CData/*7:0*/ __PVT__u_reg__DOT__u_status_txqd__DOT__d;
+        CData/*7:0*/ __PVT__u_reg__DOT__u_status_txqd__DOT__q;
+        CData/*7:0*/ __PVT__u_reg__DOT__u_status_rxqd__DOT__q;
+        CData/*3:0*/ __PVT__u_reg__DOT__u_status_cmdqd__DOT__q;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_status_rxwm__DOT__d;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_status_rxwm__DOT__q;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_status_byteorder__DOT__q;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_status_rxstall__DOT__d;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_status_rxstall__DOT__q;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_status_rxempty__DOT__q;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_status_rxfull__DOT__q;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_status_txwm__DOT__d;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_status_txwm__DOT__q;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_status_txstall__DOT__d;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_status_txstall__DOT__q;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_status_txempty__DOT__q;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_status_txfull__DOT__q;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_status_active__DOT__q;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_status_ready__DOT__d;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_status_ready__DOT__q;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_configopts_clkdiv__DOT__we;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_csid__DOT__we;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_command_csaat__DOT__we;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_error_enable_cmdbusy__DOT__we;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_error_status_cmdbusy__DOT__de;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_error_status_cmdbusy__DOT__qe;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_error_status_cmdbusy__DOT__wr_data;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_error_status_overflow__DOT__de;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_error_status_overflow__DOT__qe;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_error_status_overflow__DOT__wr_data;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_error_status_underflow__DOT__de;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_error_status_underflow__DOT__qe;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_error_status_underflow__DOT__wr_data;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_error_status_cmdinval__DOT__de;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_error_status_cmdinval__DOT__qe;
+    };
+    struct {
+        CData/*0:0*/ __PVT__u_reg__DOT__u_error_status_cmdinval__DOT__wr_data;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_error_status_csidinval__DOT__de;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_error_status_csidinval__DOT__qe;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_error_status_csidinval__DOT__wr_data;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_error_status_accessinval__DOT__we;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_error_status_accessinval__DOT__de;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_error_status_accessinval__DOT__qe;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_error_status_accessinval__DOT__wr_data;
+        CData/*0:0*/ __PVT__u_reg__DOT__u_event_enable_idle__DOT__we;
+        CData/*0:0*/ __PVT__u_cmd_queue__DOT__cmd_fifo__DOT__full_o;
+        CData/*0:0*/ __PVT__u_cmd_queue__DOT__cmd_fifo__DOT__gen_normal_fifo__DOT__fifo_incr_wptr;
+        CData/*0:0*/ __PVT__u_cmd_queue__DOT__cmd_fifo__DOT__gen_normal_fifo__DOT__fifo_incr_rptr;
+        CData/*0:0*/ __PVT__u_cmd_queue__DOT__cmd_fifo__DOT__gen_normal_fifo__DOT__fifo_empty;
+        CData/*0:0*/ __PVT__u_cmd_queue__DOT__cmd_fifo__DOT__gen_normal_fifo__DOT__under_rst;
+        CData/*2:0*/ __PVT__u_cmd_queue__DOT__cmd_fifo__DOT__gen_normal_fifo__DOT__u_fifo_cnt__DOT__wptr_wrap_cnt_q;
+        CData/*2:0*/ __PVT__u_cmd_queue__DOT__cmd_fifo__DOT__gen_normal_fifo__DOT__u_fifo_cnt__DOT__rptr_wrap_cnt_q;
+        CData/*0:0*/ __PVT__u_cmd_queue__DOT__cmd_fifo__DOT__gen_normal_fifo__DOT__u_fifo_cnt__DOT__wptr_wrap_msb;
+        CData/*0:0*/ __PVT__u_cmd_queue__DOT__cmd_fifo__DOT__gen_normal_fifo__DOT__u_fifo_cnt__DOT__rptr_wrap_msb;
+        CData/*0:0*/ __PVT__u_cmd_queue__DOT__cmd_fifo__DOT__gen_normal_fifo__DOT__u_fifo_cnt__DOT__wptr_wrap_set;
+        CData/*0:0*/ __PVT__u_cmd_queue__DOT__cmd_fifo__DOT__gen_normal_fifo__DOT__u_fifo_cnt__DOT__rptr_wrap_set;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_rx__DOT__tlul_adapter_reg__DOT__we_o;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_rx__DOT__tlul_adapter_reg__DOT__outstanding_q;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_rx__DOT__tlul_adapter_reg__DOT__a_ack;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_rx__DOT__tlul_adapter_reg__DOT__d_ack;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_rx__DOT__tlul_adapter_reg__DOT__error_q;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_rx__DOT__tlul_adapter_reg__DOT__err_internal;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_rx__DOT__tlul_adapter_reg__DOT__instr_error;
+        CData/*7:0*/ __PVT__u_window__DOT__u_adapter_rx__DOT__tlul_adapter_reg__DOT__reqid_q;
+        CData/*1:0*/ __PVT__u_window__DOT__u_adapter_rx__DOT__tlul_adapter_reg__DOT__reqsz_q;
+        CData/*2:0*/ __PVT__u_window__DOT__u_adapter_rx__DOT__tlul_adapter_reg__DOT__rspop_q;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_rx__DOT__tlul_adapter_reg__DOT__rd_req;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_rx__DOT__tlul_adapter_reg__DOT__wr_req;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__req_o;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__we_o;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__instr_error;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__intg_error_q;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__d_valid;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__d_error;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__vld_rd_rsp;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__missed_err_gnt_q;
+        CData/*0:0*/ u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT____VdfgRegularize_h0072ca25_0_0;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__u_sram_byte__DOT__error_i;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__u_reqfifo__DOT__wvalid_i;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__u_reqfifo__DOT__rready_i;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__u_reqfifo__DOT__gen_singleton_fifo__DOT__full_d;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__u_reqfifo__DOT__gen_singleton_fifo__DOT__full_q;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__u_sramreqfifo__DOT__wvalid_i;
+        CData/*4:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__u_sramreqfifo__DOT__rdata_o;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__u_sramreqfifo__DOT__gen_singleton_fifo__DOT__full_d;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__u_sramreqfifo__DOT__gen_singleton_fifo__DOT__full_q;
+        CData/*4:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__u_sramreqfifo__DOT__gen_singleton_fifo__DOT__storage;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__u_rspfifo__DOT__gen_singleton_fifo__DOT__full_d;
+        CData/*0:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__u_rspfifo__DOT__gen_singleton_fifo__DOT__full_q;
+        CData/*3:0*/ __PVT__u_data_fifos__DOT__tx_be_i;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_tx_fifo__DOT__wvalid_i;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_tx_fifo__DOT__wready_o;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_tx_fifo__DOT__rvalid_o;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_tx_fifo__DOT__rready_i;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_tx_fifo__DOT__full_o;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_tx_fifo__DOT__gen_normal_fifo__DOT__fifo_incr_wptr;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_tx_fifo__DOT__gen_normal_fifo__DOT__fifo_incr_rptr;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_tx_fifo__DOT__gen_normal_fifo__DOT__fifo_empty;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_tx_fifo__DOT__gen_normal_fifo__DOT__under_rst;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_tx_fifo__DOT__gen_normal_fifo__DOT__empty;
+    };
+    struct {
+        CData/*7:0*/ __PVT__u_data_fifos__DOT__u_tx_fifo__DOT__gen_normal_fifo__DOT__u_fifo_cnt__DOT__wptr_wrap_cnt_q;
+        CData/*7:0*/ __PVT__u_data_fifos__DOT__u_tx_fifo__DOT__gen_normal_fifo__DOT__u_fifo_cnt__DOT__rptr_wrap_cnt_q;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_tx_fifo__DOT__gen_normal_fifo__DOT__u_fifo_cnt__DOT__wptr_wrap_msb;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_tx_fifo__DOT__gen_normal_fifo__DOT__u_fifo_cnt__DOT__rptr_wrap_msb;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_tx_fifo__DOT__gen_normal_fifo__DOT__u_fifo_cnt__DOT__wptr_wrap_set;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_tx_fifo__DOT__gen_normal_fifo__DOT__u_fifo_cnt__DOT__rptr_wrap_set;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_rx_fifo__DOT__wvalid_i;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_rx_fifo__DOT__wready_o;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_rx_fifo__DOT__rvalid_o;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_rx_fifo__DOT__rready_i;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_rx_fifo__DOT__full_o;
+        CData/*6:0*/ __PVT__u_data_fifos__DOT__u_rx_fifo__DOT__depth_o;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_rx_fifo__DOT__gen_normal_fifo__DOT__fifo_incr_wptr;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_rx_fifo__DOT__gen_normal_fifo__DOT__fifo_incr_rptr;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_rx_fifo__DOT__gen_normal_fifo__DOT__fifo_empty;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_rx_fifo__DOT__gen_normal_fifo__DOT__under_rst;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_rx_fifo__DOT__gen_normal_fifo__DOT__empty;
+        CData/*6:0*/ __PVT__u_data_fifos__DOT__u_rx_fifo__DOT__gen_normal_fifo__DOT__u_fifo_cnt__DOT__wptr_wrap_cnt_q;
+        CData/*6:0*/ __PVT__u_data_fifos__DOT__u_rx_fifo__DOT__gen_normal_fifo__DOT__u_fifo_cnt__DOT__rptr_wrap_cnt_q;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_rx_fifo__DOT__gen_normal_fifo__DOT__u_fifo_cnt__DOT__wptr_wrap_msb;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_rx_fifo__DOT__gen_normal_fifo__DOT__u_fifo_cnt__DOT__rptr_wrap_msb;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_rx_fifo__DOT__gen_normal_fifo__DOT__u_fifo_cnt__DOT__wptr_wrap_set;
+        CData/*0:0*/ __PVT__u_data_fifos__DOT__u_rx_fifo__DOT__gen_normal_fifo__DOT__u_fifo_cnt__DOT__rptr_wrap_set;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_merge__DOT__last_q;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_merge__DOT__do_fill;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_merge__DOT__byte_incoming;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_merge__DOT__u_packer__DOT__wready_o;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_merge__DOT__u_packer__DOT__load_data;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_merge__DOT__u_packer__DOT__clear_status;
+        CData/*2:0*/ __PVT__u_spi_core__DOT__u_merge__DOT__u_packer__DOT__depth_q;
+        CData/*2:0*/ __PVT__u_spi_core__DOT__u_merge__DOT__u_packer__DOT__depth_d;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_merge__DOT__u_packer__DOT__clr_q;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_select__DOT__u_packer__DOT__rvalid_o;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_select__DOT__u_packer__DOT__rready_i;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_select__DOT__u_packer__DOT__load_data;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_select__DOT__u_packer__DOT__clear_status;
+        CData/*2:0*/ __PVT__u_spi_core__DOT__u_select__DOT__u_packer__DOT__depth_q;
+        CData/*2:0*/ __PVT__u_spi_core__DOT__u_select__DOT__u_packer__DOT__depth_d;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_select__DOT__u_packer__DOT__clr_q;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_select__DOT__u_packer__DOT__gen_unpack_mode__DOT__pull_data;
+        CData/*2:0*/ __PVT__u_spi_core__DOT__u_select__DOT__u_packer__DOT__gen_unpack_mode__DOT__ptr_q;
+        CData/*2:0*/ __PVT__u_spi_core__DOT__u_select__DOT__u_packer__DOT__gen_unpack_mode__DOT__ptr_d;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_shift_reg__DOT__wr_en_i;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_shift_reg__DOT__wr_ready_o;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_shift_reg__DOT__rd_ready_o;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_shift_reg__DOT__shift_en_i;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_shift_reg__DOT__full_cyc_i;
+        CData/*7:0*/ __PVT__u_spi_core__DOT__u_shift_reg__DOT__sr_q;
+        CData/*7:0*/ __PVT__u_spi_core__DOT__u_shift_reg__DOT__sr_d;
+        CData/*3:0*/ __PVT__u_spi_core__DOT__u_shift_reg__DOT__sd_i_q;
+        CData/*3:0*/ __PVT__u_spi_core__DOT__u_shift_reg__DOT__sd_i_d;
+        CData/*3:0*/ __PVT__u_spi_core__DOT__u_shift_reg__DOT__next_bits;
+        CData/*7:0*/ __PVT__u_spi_core__DOT__u_shift_reg__DOT__sr_shifted;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_shift_reg__DOT__rx_buf_valid_q;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_shift_reg__DOT__rx_buf_valid_d;
+        CData/*0:0*/ u_spi_core__DOT__u_shift_reg__DOT____VdfgRegularize_hf6781d4b_0_4;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__en_i;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__is_idle;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__csid;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__csid_q;
+        CData/*3:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__csnidle;
+        CData/*3:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__csntrail;
+        CData/*3:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__csnlead;
+        CData/*3:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__csnidle_q;
+    };
+    struct {
+        CData/*3:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__csntrail_q;
+        CData/*3:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__csnlead_q;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__cpha;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__cpol;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__full_cyc_q;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__cpha_q;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__cpol_q;
+        CData/*1:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__cmd_speed_d;
+        CData/*1:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__cmd_speed_q;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__cmd_wr_en_d;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__cmd_wr_en_q;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__cmd_rd_en_d;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__cmd_rd_en_q;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__csaat;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__csaat_q;
+        CData/*2:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__bit_cntr_d;
+        CData/*2:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__bit_cntr_q;
+        CData/*3:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__wait_cntr_d;
+        CData/*3:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__wait_cntr_q;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__last_byte;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__state_changing;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__byte_starting;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__bit_shifting;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__byte_ending;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__byte_ending_cpha0;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__byte_ending_cpha1;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__sample_en_q;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__sample_en_q2;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__fsm_en;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__new_command;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__csb_single_d;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__csb_q;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__sck_q;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__wr_en_internal;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__rd_en_internal;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__stall;
+        CData/*2:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__state_q;
+        CData/*2:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__state_d;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__command_ready_int;
+        CData/*2:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__next_state_after_idle;
+        CData/*2:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__next_state_after_idle_csb_active;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__command_ready_idle_csb_active;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__segment_rd_en_cpha1;
+        CData/*2:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__shift_size;
+        CData/*2:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__start_bit;
+        CData/*0:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__cmd_wr_en_last_bit;
+        CData/*0:0*/ u_spi_core__DOT__u_fsm__DOT____VdfgRegularize_h21696560_0_1;
+        CData/*0:0*/ __PVT__intr_hw_spi_event__DOT__g_intr_status__DOT__test_q;
+        CData/*0:0*/ __Vfunc_mubi4_test_true_strict__1__Vfuncout;
+        CData/*3:0*/ __Vfunc_mubi4_test_true_strict__1__val;
+        CData/*0:0*/ __Vfunc_mubi4_test_true_strict__3__Vfuncout;
+        CData/*3:0*/ __Vfunc_mubi4_test_true_strict__3__val;
+        CData/*0:0*/ __Vfunc_mubi4_test_invalid__5__Vfuncout;
+        CData/*3:0*/ __Vfunc_mubi4_test_invalid__5__val;
+        CData/*0:0*/ __Vfunc_mubi4_test_true_strict__6__Vfuncout;
+        CData/*3:0*/ __Vfunc_mubi4_test_true_strict__6__val;
+        CData/*0:0*/ __Vfunc_mubi4_test_true_strict__8__Vfuncout;
+        CData/*3:0*/ __Vfunc_mubi4_test_true_strict__8__val;
+        CData/*0:0*/ __Vfunc_mubi4_test_true_strict__10__Vfuncout;
+        CData/*3:0*/ __Vfunc_mubi4_test_true_strict__10__val;
+        CData/*0:0*/ __Vfunc_mubi4_test_true_strict__12__Vfuncout;
+        CData/*3:0*/ __Vfunc_mubi4_test_true_strict__12__val;
+        CData/*0:0*/ __Vfunc_mubi4_test_invalid__14__Vfuncout;
+        CData/*3:0*/ __Vfunc_mubi4_test_invalid__14__val;
+    };
+    struct {
+        CData/*0:0*/ __Vfunc_mubi4_test_true_strict__15__Vfuncout;
+        CData/*3:0*/ __Vfunc_mubi4_test_true_strict__15__val;
+        CData/*0:0*/ __Vfunc_mubi4_test_true_strict__17__Vfuncout;
+        CData/*3:0*/ __Vfunc_mubi4_test_true_strict__17__val;
+        CData/*2:0*/ __Vdly__u_cmd_queue__DOT__cmd_fifo__DOT__gen_normal_fifo__DOT__u_fifo_cnt__DOT__wptr_wrap_cnt_q;
+        CData/*7:0*/ __Vdly__u_data_fifos__DOT__u_tx_fifo__DOT__gen_normal_fifo__DOT__u_fifo_cnt__DOT__wptr_wrap_cnt_q;
+        CData/*6:0*/ __Vdly__u_data_fifos__DOT__u_rx_fifo__DOT__gen_normal_fifo__DOT__u_fifo_cnt__DOT__wptr_wrap_cnt_q;
+        VL_IN16(passthrough_i,12,0);
+        SData/*15:0*/ u_reg__DOT____Vcellout__u_configopts_clkdiv__q;
+        SData/*11:0*/ __PVT__u_reg__DOT__addr_hit;
+        SData/*11:0*/ __PVT__u_reg__DOT__racl_addr_hit_read;
+        SData/*11:0*/ __PVT__u_reg__DOT__racl_addr_hit_write;
+        SData/*11:0*/ __PVT__u_reg__DOT__u_prim_reg_we_check__DOT__u_prim_buf__DOT__gen_generic__DOT__u_impl_generic__DOT__in_i;
+        SData/*8:0*/ __PVT__u_spi_core__DOT__u_shift_reg__DOT__rx_buf_q;
+        SData/*8:0*/ __PVT__u_spi_core__DOT__u_shift_reg__DOT__rx_buf_d;
+        SData/*15:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__clkdiv;
+        SData/*15:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__clkdiv_q;
+        SData/*15:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__clk_cntr_q;
+        SData/*15:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__clk_cntr_d;
+        SData/*11:0*/ __VdfgRegularize_hf4aef21c_1_4;
+        IData/*31:0*/ __PVT__u_reg__DOT__reg_rdata_next;
+        IData/*31:0*/ u_reg__DOT____Vcellout__u_csid__q;
+        IData/*31:0*/ __PVT__u_reg__DOT__u_rsp_intg_gen__DOT__gen_data_intg__DOT__u_tlul_data_integ_enc__DOT__u_data_gen__DOT__data_i;
+        IData/*31:0*/ __PVT__u_reg__DOT__u_reg_if__DOT__rdata_q;
+        IData/*31:0*/ __PVT__u_window__DOT__u_adapter_rx__DOT__tlul_adapter_reg__DOT__rdata_q;
+        IData/*31:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__wmask_o;
+        IData/*31:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__error_blanking_data;
+        IData/*31:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__unnamedblk1__DOT__i;
+        IData/*16:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__u_reqfifo__DOT__rdata_o;
+        IData/*16:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__u_reqfifo__DOT__gen_singleton_fifo__DOT__storage;
+        VlWide<64>/*2047:0*/ __PVT__u_data_fifos__DOT__u_rx_fifo__DOT__gen_normal_fifo__DOT__storage;
+        IData/*31:0*/ __PVT__u_spi_core__DOT__u_merge__DOT__u_packer__DOT__data_q;
+        IData/*31:0*/ __PVT__u_spi_core__DOT__u_merge__DOT__u_packer__DOT__data_d;
+        IData/*19:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__cmd_len_d;
+        IData/*19:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__cmd_len_q;
+        IData/*19:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__byte_cntr_cpha0_d;
+        IData/*19:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__byte_cntr_cpha1_d;
+        IData/*19:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__byte_cntr_cpha0_q;
+        IData/*19:0*/ __PVT__u_spi_core__DOT__u_fsm__DOT__byte_cntr_cpha1_q;
+        IData/*16:0*/ __VdfgRegularize_hf4aef21c_1_5;
+        VlWide<4>/*105:0*/ __VdfgRegularize_hf4aef21c_1_6;
+        VL_INW(tl_i,108,0,4);
+        VL_OUTW(tl_o,65,0,3);
+        VlWide<5>/*137:0*/ __PVT__u_reg__DOT__reg2hw;
+        VlWide<3>/*65:0*/ __PVT__u_reg__DOT__u_rsp_intg_gen__DOT__tl_i;
+        QData/*56:0*/ __PVT__u_cmd_queue__DOT__cmd_fifo__DOT__rdata_o;
+        VlWide<8>/*227:0*/ __PVT__u_cmd_queue__DOT__cmd_fifo__DOT__gen_normal_fifo__DOT__storage;
+        QData/*56:0*/ u_cmd_queue__DOT__cmd_fifo__DOT____Vlvbound_h55a17f9b__0;
+        VlWide<3>/*65:0*/ __PVT__u_window__DOT__u_adapter_rx__DOT__tlul_adapter_reg__DOT__u_rsp_intg_gen__DOT__tl_i;
+        VlWide<3>/*65:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__u_rsp_gen__DOT__tl_i;
+        QData/*39:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__u_rspfifo__DOT__rdata_o;
+        QData/*39:0*/ __PVT__u_window__DOT__u_adapter_tx__DOT__tlul_adapter_sram__DOT__u_rspfifo__DOT__gen_singleton_fifo__DOT__storage;
+        QData/*35:0*/ __PVT__u_data_fifos__DOT__u_tx_fifo__DOT__wdata_i;
+        QData/*35:0*/ __PVT__u_data_fifos__DOT__u_tx_fifo__DOT__rdata_o;
+        VlWide<81>/*2591:0*/ __PVT__u_data_fifos__DOT__u_tx_fifo__DOT__gen_normal_fifo__DOT__storage;
+        QData/*35:0*/ u_data_fifos__DOT__u_tx_fifo__DOT____Vlvbound_h1acac003__0;
+        QData/*35:0*/ __PVT__u_spi_core__DOT__u_select__DOT__u_packer__DOT__data_q;
+        QData/*35:0*/ __PVT__u_spi_core__DOT__u_select__DOT__u_packer__DOT__data_d;
+        QData/*35:0*/ __PVT__u_spi_core__DOT__u_select__DOT__u_packer__DOT__gen_unpack_mode__DOT__rdata_shifted;
+        VlUnpacked<VlWide<4>/*108:0*/, 2> __PVT__fifo_win_h2d;
+        VlUnpacked<VlWide<3>/*65:0*/, 2> __PVT__fifo_win_d2h;
+        VlUnpacked<VlWide<4>/*108:0*/, 2> __PVT__u_reg__DOT__tl_win_o;
+        VlUnpacked<VlWide<3>/*65:0*/, 2> __PVT__u_reg__DOT__tl_win_i;
+        VlUnpacked<VlWide<4>/*108:0*/, 3> __PVT__u_reg__DOT__tl_socket_h2d;
+    };
+    struct {
+        VlUnpacked<VlWide<3>/*65:0*/, 3> __PVT__u_reg__DOT__tl_socket_d2h;
+        VlUnpacked<VlWide<3>/*65:0*/, 3> u_reg__DOT____Vcellinp__u_socket__tl_d_i;
+        VlUnpacked<VlWide<4>/*108:0*/, 3> u_reg__DOT____Vcellout__u_socket__tl_d_o;
+    };
+
+    // INTERNAL VARIABLES
+    Vsim__Syms* const vlSymsp;
+
+    // PARAMETERS
+    static constexpr VlUnpacked<IData/*31:0*/, 12> __PVT__RaclPolicySelVec = {{
+        0U, 0U, 0U, 0U,
+        0U, 0U, 0U, 0U,
+        0U, 0U, 0U, 0U
+    }};
+    static constexpr VlUnpacked<IData/*31:0*/, 12> __PVT__u_reg__DOT__RaclPolicySelVec = {{
+        0U, 0U, 0U, 0U,
+        0U, 0U, 0U, 0U,
+        0U, 0U, 0U, 0U
+    }};
+
+    // CONSTRUCTORS
+    Vsim_spi_host__Az2(Vsim__Syms* symsp, const char* v__name);
+    ~Vsim_spi_host__Az2();
+    VL_UNCOPYABLE(Vsim_spi_host__Az2);
+
+    // INTERNAL METHODS
+    void __Vconfigure(bool first);
+};
+
+
+#endif  // guard
