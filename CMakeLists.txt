@@ -22,7 +22,6 @@ if(ENABLE_COVERAGE)
 	add_link_options(--coverage)
 endif()
 
-add_subdirectory(external/libfstpp/src external_libfstpp EXCLUDE_FROM_ALL
-)
+add_subdirectory(external/libfstpp/src external_libfstpp EXCLUDE_FROM_ALL)
 add_subdirectory(src)
 add_subdirectory(benchmark)

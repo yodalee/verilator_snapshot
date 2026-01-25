@@ -43,11 +43,6 @@ int main(int argc, char** argv, char**) {
         // Advance time
         if (!topp->eventsPending()) break;
         contextp->time(topp->nextTimeSlot());
-
-        if (contextp->time() % 100000 == 0) {
-            std::cout << "Complete cycle: " << contextp->time() << " ps; Elapsed time: " 
-                << duration_cast<seconds>(high_resolution_clock::now() - tic).count() << " s" << std::endl;
-        }
     }
 
     if (VL_LIKELY(!contextp->gotFinish())) {
