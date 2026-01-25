@@ -45,10 +45,10 @@ Please refer to the [unofficial document](https://blog.timhutt.co.uk/fst_spec/) 
 # Profiling results
 
 We collect the following benchmark:
-1. [RSA256](https://github.com/yodalee/rsa256)
-2. [picorv32](https://github.com/YosysHQ/picorv32)
-3. [Vortex:mini:sgemm](https://github.com/vortexgpgpu/vortex) from [rtlmeter](https://github.com/verilator/rtlmeter)
-4. [OpenTitan:default:sha](https://github.com/lowRISC/opentitan) from [rtlmeter](https://github.com/verilator/rtlmeter)
+1. [picorv32](https://github.com/YosysHQ/picorv32)
+2. [Vortex:mini:sgemm](https://github.com/vortexgpgpu/vortex) from [rtlmeter](https://github.com/verilator/rtlmeter)
+3. [OpenTitan:default:sha](https://github.com/lowRISC/opentitan) from [rtlmeter](https://github.com/verilator/rtlmeter)
+5. [NVDLA:default:gnet](https://github.com/nvdla/hw) from [rtlmeter](https://github.com/verilator/rtlmeter)
 
 ## Benchmarks
 
@@ -56,16 +56,16 @@ We collect the following benchmark:
 
 * CPU: AMD Ryzen 9 7950X
 * `CMAKE_BUILD_TYPE`: Release mode
-* Commit: `653f0f0` / 20260124
+* Commit: `20c43597` / 20260125
 
 Cell is the runtime (ms).
 
 | Benchmark           |  No FST (A) | GtkWave FST (B) | This FST (C) | Speedup(B-A)/(C-A) |
 |:--------------------|------------:|----------------:|-------------:|-------------------:|
-| picorv32            |        78.4 |          1287.7 |        825.9 |              1.62x |
-| vortex:mini:sgemm   |      7436.3 |         44722.4 |      35042.3 |              1.31x |
-| OpenTitan:sha       |     96603.1 |        193932.0 |     173746.4 |              1.26x |
-| NVDLA:gnet          |     46930.4 |        259299.0 |     258489.8 |              1.00x |
+| picorv32            |        72.3 |          1492.2 |        489.6 |              3.40x |
+| vortex:mini:sgemm   |      7436.3 |         44871.8 |      31336.3 |              1.57x |
+| OpenTitan:sha       |     96603.1 |        193932.0 |     166178.0 |              1.40x |
+| NVDLA:gnet          |     46930.4 |        244540.1 |     226628.9 |              1.10x |
 
 ### Hardware 2
 
